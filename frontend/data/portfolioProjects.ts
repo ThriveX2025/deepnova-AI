@@ -53,7 +53,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Eliminate manual data entry and reduce certificate generation time from hours to minutes. Our AI-powered platform extracts the specifications from your PDFs, validates data automatically, and generates professional test reports — all from one unified dashboard.",
     image: "/images/portfolio/portfolio-1.webp",
     secondaryImage: "/images/portfolio/portfolio-1-sub.webp",
-    video: "/images/Certificate-Automation-Platform.mp4",
+    video: "/api/video/Certificate-Automation-Platform.mp4",
     cardGridTitle: "CORE FEATURES",
     coreFeatures: [
       { title: "AI-powered PDF data extraction" },
@@ -108,7 +108,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Automate your quotation process with our AI-powered platform. Instantly convert customer inquiries into structured quotations, edit Terms & Conditions with simple instructions, and export branded files in multiple formats — all from centralized systems.",
     image: "/images/portfolio/portfolio-2.png",
     secondaryImage: "/images/portfolio/portfolio-2.png",
-    video: "/images/AI-Powerd-BOQ-Generator.mp4",
+    video: "/api/video/AI-Powerd-BOQ-Generator.mp4",
     cardGridTitle: "PLATFORM CAPABILITIES",
     coreFeatures: [
       { title: "Convert customer inquiry PDFs into structured quotations" },
@@ -164,7 +164,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Transform your business operations with comprehensive management platform. Track inquiries, generate quotations, manage purchase orders, create invoices, and monitor financial sustainability — all from one unified dashboard with real-time insights and automated workflows.",
     image: "/images/portfolio/portfolio-3.png",
     secondaryImage: "/images/portfolio/portfolio-3.png",
-    video: "/images/Business-Management-Platform.mp4",
+    video: "/api/video/Business-Management-Platform.mp4",
     cardGridTitle: "CORE FEATURES",
     coreFeatures: [
       { title: "Inquiry & Lead Management" },
@@ -228,7 +228,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Make smarter business decisions with our advanced Business Intelligence platform. Connect your data, visualize performance, track KPIs, and manage operations from one unified dashboard — in real time.",
     image: "/images/portfolio/portfolio-4.webp",
     secondaryImage: "/images/portfolio/portfolio-4.webp",
-    video: "/images/Smart-Business-Intelligence-dashboard.mp4",
+    video: "/api/video/Smart-Business-Intelligence-dashboard.mp4",
     cardGridTitle: "BUSINESS USE CASES",
     coreFeatures: [
       { title: "Sales performance tracking" },
@@ -288,7 +288,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Modernize your warehouse operations with our AI-based mobile app and web dashboard. Capture a photo to count stock automatically, extract product label data, and sync everything to a centralized dashboard in real time.",
     image: "/images/portfolio/portfolio-5.png",
     secondaryImage: "/images/portfolio/portfolio-5-sub.png",
-    video: "/images/Stockora-final.mp4",
+    video: "/api/video/Inventory%20final%20video.mp4",
     cardGridTitle: "MOBILE APP FEATURES",
     coreFeatures: [
       {
