@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   title: "Transform Data into Insights with DeepNova AI Solutions",
   description: "Explore how DeepNova AI converts data into actionable insights for strategic growth and a competitive edge.",
   icons: {
-    icon: "/images/favicon.png",
-    shortcut: "/images/favicon.png",
-    apple: "/images/favicon.png",
+    icon: "/images/favicon.svg",
+    shortcut: "/images/favicon.svg",
+    apple: "/images/favicon.svg",
   },
 };
 

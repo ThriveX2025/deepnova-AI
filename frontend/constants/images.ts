@@ -9,7 +9,7 @@ export const SITE_IMAGES = {
   navbarLogo: "/images/logo2.svg",
   footerLogo: "/images/logo.svg",
   logo: "/images/logo2.svg",
-  favicon: "/images/favicon.png",
+  favicon: "/images/favicon.svg",
 
   // 1. Hero Carousel Banner Slides (Local in public/images/)
   hero: {
