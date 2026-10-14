@@ -121,7 +121,7 @@ export const TailoredSolutions: React.FC = () => {
           {/* Right Descriptions */}
           <div className="lg:col-span-6 space-y-4 font-body text-[#4A5568] text-[16px] leading-[29px] pt-1">
             <p>
-              ThriveX AI is one of the premier Data-Driven Strategy with AI Consulting, offering comprehensive solutions for making exceptional decisions and driving substantial growth in your business value.
+              DeepNova AI is one of the premier Data-Driven Strategy with AI Consulting, offering comprehensive solutions for making exceptional decisions and driving substantial growth in your business value.
             </p>
             <p>
               Leverage our Data-Driven Strategy Consulting Services to Maximize Your Business Assets and Achieve Your Goals Effectively.

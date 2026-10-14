@@ -1,8 +1,8 @@
 /**
- * Centralized Portfolio Projects Data for ThriveX AI Website
+ * Centralized Portfolio Projects Data for DeepNova AI Website
  *
  * Full detailed specifications, features, workflows, and metrics
- * for each of the 5 portfolio projects matching thrivexai.com exactly.
+ * for each of the 5 portfolio projects matching deepnovaai.com exactly.
  */
 
 export interface ProjectFeature {

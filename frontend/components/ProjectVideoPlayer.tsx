@@ -106,7 +106,7 @@ export const ProjectVideoPlayer: React.FC<ProjectVideoPlayerProps> = ({
           className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 lg:p-10 animate-in fade-in duration-200"
           onClick={handleClose}
         >
-          {/* Top-Right Close Button matching thrivexai.com Elementor lightbox */}
+          {/* Top-Right Close Button matching deepnovaai.com Elementor lightbox */}
           <button
             type="button"
             onClick={handleClose}

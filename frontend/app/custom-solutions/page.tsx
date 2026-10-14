@@ -37,7 +37,7 @@ export default function CustomSolutionsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Card 1: Computer Vision */}
             <div className="bg-white rounded-[26px] p-9 sm:p-12 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-              {/* Computer Vision High-Res Icon from thrivexai.com */}
+              {/* Computer Vision High-Res Icon */}
               <div className="w-20 h-20 mb-6 rounded-2xl bg-blue-50/50 border border-blue-100/80 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/images/solutions/vision.png"
@@ -55,7 +55,7 @@ export default function CustomSolutionsPage() {
 
               {/* Description */}
               <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
-                ThriveX AI uses NLP expertise to build intelligent applications that understand human language, driving results beyond traditional methods.
+                DeepNova AI uses NLP expertise to build intelligent applications that understand human language, driving results beyond traditional methods.
               </p>
 
               {/* Arrow Button Link */}
@@ -78,7 +78,7 @@ export default function CustomSolutionsPage() {
 
             {/* Card 2: Natural Language Processing */}
             <div className="bg-white rounded-[26px] p-9 sm:p-12 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-              {/* NLP High-Res Icon from thrivexai.com */}
+              {/* NLP High-Res Icon */}
               <div className="w-20 h-20 mb-6 rounded-2xl bg-blue-50/50 border border-blue-100/80 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/images/solutions/processing.png"

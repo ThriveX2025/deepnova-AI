@@ -46,7 +46,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
     titlePrimary: "",
     titleAccent: "Natural language processing development",
     description:
-      "ThriveX AI empower intelligent applications capable of genuinely comprehending human language. Our NLP Development Experts assists organizations in achieving outcomes that traditional data processing methods cannot accomplish. We enhance various facets of your business through our NLP Solutions.",
+      "DeepNova AI empower intelligent applications capable of genuinely comprehending human language. Our NLP Development Experts assists organizations in achieving outcomes that traditional data processing methods cannot accomplish. We enhance various facets of your business through our NLP Solutions.",
     ctaText: "Read More",
     ctaLink: "/services/nlp",
   },

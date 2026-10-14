@@ -150,7 +150,7 @@ export default function NaturalLanguageProcessingDevelopmentPage() {
                 Machine <span className="text-[#3B66FF]">Translation</span>
               </h2>
               <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
-                Break language barriers with accurate translation engines. ThriveX AI develops customized translation models powered by deep learning for accurate multi-lingual communication across business domains.
+                Break language barriers with accurate translation engines. DeepNova AI develops customized translation models powered by deep learning for accurate multi-lingual communication across business domains.
               </p>
             </div>
 

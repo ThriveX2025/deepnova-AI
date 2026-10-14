@@ -20,8 +20,7 @@ export default function PortfolioPage() {
       <section
         className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[150px] lg:pb-[200px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
         style={{
-          backgroundImage:
-            "url('/images/about-hero.jpg'), url('/images/about/about-hero.jpg'), url('https://thrivexai.com/wp-content/uploads/2024/10/2149611211.jpg')",
+          backgroundImage: "url('/images/about-hero.jpg')",
         }}
       >
         {/* Exact 70% Dark Overlay */}

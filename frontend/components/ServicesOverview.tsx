@@ -29,7 +29,7 @@ const SERVICES_LIST: ServiceCard[] = [
       </svg>
     ),
     description:
-      "ThriveX AI is a leader in Data-Driven Strategy Consulting and custom solutions, offering cutting-edge expertise in statistical methodologies, neural networks, and machine learning.",
+      "DeepNova AI is a leader in Data-Driven Strategy Consulting and custom solutions, offering cutting-edge expertise in statistical methodologies, neural networks, and machine learning.",
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const SERVICES_LIST: ServiceCard[] = [
       </svg>
     ),
     description:
-      "ThriveX AI drives digital excellence with advanced custom application development, helping businesses worldwide achieve new levels of digital transformation.",
+      "DeepNova AI drives digital excellence with advanced custom application development, helping businesses worldwide achieve new levels of digital transformation.",
   },
   {
     id: 3,
@@ -93,7 +93,7 @@ export const ServicesOverview: React.FC = () => {
           {/* Right Lead Copy + Decorative dot */}
           <div className="lg:col-span-6 relative flex items-center justify-between">
             <p className="font-body text-[#4A5568] text-[16px] leading-[29px] pr-8">
-              ThriveX AI empowers transformative insights in businesses through its Data-Driven Strategy Consulting team, utilizing Artificial Intelligence, Machine Learning, and Deep Learning. We remain at the forefront of industry trends, providing high-impact business solutions that drive remarkable revenue growth.
+              DeepNova AI empowers transformative insights in businesses through its Data-Driven Strategy Consulting team, utilizing Artificial Intelligence, Machine Learning, and Deep Learning. We remain at the forefront of industry trends, providing high-impact business solutions that drive remarkable revenue growth.
             </p>
             <div className="hidden sm:block w-3.5 h-3.5 rounded-full bg-[#4169E1] flex-shrink-0" />
           </div>

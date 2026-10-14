@@ -84,7 +84,7 @@ export const BlogPreview: React.FC = () => {
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-blue-900 to-[#010D4C] flex items-center justify-center p-4">
                       <span className="font-title text-sm font-bold text-white uppercase tracking-wider">
-                        ThriveX AI Blog
+                        DeepNova AI Blog
                       </span>
                     </div>
                   )}

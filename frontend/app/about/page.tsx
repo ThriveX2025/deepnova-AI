@@ -14,31 +14,31 @@ const TEAM_MEMBERS = [
     name: "Dhruv",
     role: "Graphic Designer &\nSocial Media Manager",
     image: SITE_IMAGES.about.team.dhruv,
-    fallback: "https://thrivexai.com/wp-content/uploads/2026/06/Dhruv.webp",
+    fallback: "/images/team/Dhruv.webp",
   },
   {
     name: "Kishan",
     role: "AI-ML Developer",
     image: SITE_IMAGES.about.team.kishan,
-    fallback: "https://thrivexai.com/wp-content/uploads/2026/08/Kishan-e1785914609130.png",
+    fallback: "/images/team/Kishan.png",
   },
   {
     name: "Umang",
     role: "AI-ML Developer",
     image: SITE_IMAGES.about.team.umang,
-    fallback: "https://thrivexai.com/wp-content/uploads/2026/06/Umang.webp",
+    fallback: "/images/team/Umang.webp",
   },
   {
     name: "Darshan",
     role: "UI/UX Designer &\nPython Developer",
     image: SITE_IMAGES.about.team.darshan,
-    fallback: "https://thrivexai.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-5-2026-01_22_44-PM-e1785916637159.png",
+    fallback: "/images/team/Darshan.png",
   },
   {
     name: "Kush",
     role: "UI/UX Designer",
     image: SITE_IMAGES.about.team.kush,
-    fallback: "https://thrivexai.com/wp-content/uploads/2026/07/Kush.jpeg",
+    fallback: "/images/team/Kush.jpeg",
   },
 ];
 
@@ -47,25 +47,25 @@ const VALUE_OFFERS_ROW1 = [
     title: "Innovation",
     description: "Exploring new ways to bring innovation to our solutions.",
     image: SITE_IMAGES.about.values.innovation,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/idea-1.png",
+    fallback: "/images/values/idea.png",
   },
   {
     title: "Technology",
     description: "Exploring new ways to bring innovation to our solutions.",
     image: SITE_IMAGES.about.values.technology,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/technology.png",
+    fallback: "/images/values/technology.png",
   },
   {
     title: "Reliable Support",
     description: "Exploring new ways to bring innovation to our solutions.",
     image: SITE_IMAGES.about.values.reliability,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/reliability.png",
+    fallback: "/images/values/reliability.png",
   },
   {
     title: "Integrity",
     description: "Exploring new ways to bring innovation to our solutions.",
     image: SITE_IMAGES.about.values.integrity,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/network.png",
+    fallback: "/images/values/network.png",
   },
 ];
 
@@ -74,13 +74,13 @@ const VALUE_OFFERS_ROW2 = [
     title: "Transparency",
     description: "We make the interaction process easier with transparent communication.",
     image: SITE_IMAGES.about.values.transparency,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/transparency.png",
+    fallback: "/images/values/transparency.png",
   },
   {
     title: "Scalability",
     description: "Our highly scalable team meets the needs of our growing customer base.",
     image: SITE_IMAGES.about.values.scalability,
-    fallback: "https://thrivexai.com/wp-content/uploads/2024/08/scalability.png",
+    fallback: "/images/values/scalability.png",
   },
 ];
 
@@ -119,8 +119,7 @@ export default function AboutPage() {
       <section
         className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[150px] lg:pb-[200px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
         style={{
-          backgroundImage:
-            "url('/images/about/about-hero.jpg'), url('https://thrivexai.com/wp-content/uploads/2024/10/2149611211.jpg')",
+          backgroundImage: "url('/images/about-hero.jpg')",
         }}
       >
         {/* Exact 70% Dark Elementor Overlay */}
@@ -179,7 +178,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
               <div className="relative w-full max-w-[560px] aspect-square rounded-[24px] overflow-hidden shadow-xl border border-slate-100">
                 <img
-                  src="https://thrivexai.com/wp-content/uploads/2024/12/team-man-woman-working-media-field-with-laptop-tablet_23-2148901154.jpg"
+                  src={SITE_IMAGES.about.whoWeAre}
                   alt="AI for your business"
                   className="w-full h-full object-cover object-center"
                 />
@@ -442,7 +441,7 @@ export default function AboutPage() {
                   className="w-10 h-10 object-contain"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = "https://thrivexai.com/wp-content/uploads/2024/08/squer.svg";
+                    e.currentTarget.src = SITE_IMAGES.about.cubeIcon;
                   }}
                 />
               </div>
@@ -466,7 +465,7 @@ export default function AboutPage() {
                   className="w-10 h-10 object-contain"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = "https://thrivexai.com/wp-content/uploads/2024/08/squer.svg";
+                    e.currentTarget.src = SITE_IMAGES.about.cubeIcon;
                   }}
                 />
               </div>
@@ -532,8 +531,7 @@ export default function AboutPage() {
                   className="w-full h-full object-cover object-center"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src =
-                      "https://thrivexai.com/wp-content/uploads/2024/12/business-concept-with-team-close-up_23-2149151159.jpg";
+                    e.currentTarget.src = SITE_IMAGES.about.whyChooseUs;
                   }}
                 />
               </div>

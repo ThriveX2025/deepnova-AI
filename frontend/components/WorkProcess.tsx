@@ -44,7 +44,7 @@ export const WorkProcess: React.FC = () => {
 
   return (
     <section className="relative w-full bg-white py-16 sm:py-20 lg:py-24 px-6 sm:px-10 lg:px-14 overflow-hidden">
-      {/* Blueprint Grid with Crosshair '+' background pattern matching thrivexai.com */}
+      {/* Blueprint Grid with Crosshair '+' background pattern matching deepnovaai.com */}
       <div
         className="absolute inset-0 pointer-events-none opacity-85"
         style={{
@@ -65,13 +65,13 @@ export const WorkProcess: React.FC = () => {
 
             {/* Main Headline */}
             <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[52px] font-bold text-[#010D4C] tracking-tight leading-[1.15] lg:leading-[58px] mb-6">
-              How <span className="text-[#3B66FF]">ThriveX AI&apos;s</span> <br />
+              How <span className="text-[#3B66FF]">DeepNova AI&apos;s</span> <br />
               process &amp; works.
             </h2>
 
             {/* Subtitle / Description */}
             <p className="font-body text-[#4A5568] text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-7 max-w-xl">
-              ThriveX AI specializes in Data-Driven Strategy Consulting, machine learning, and artificial intelligence, providing business solutions that deliver blazing-fast, striking results.
+              DeepNova AI specializes in Data-Driven Strategy Consulting, machine learning, and artificial intelligence, providing business solutions that deliver blazing-fast, striking results.
             </p>
 
             {/* "Want to learn more about us? Click here" Link */}
@@ -104,7 +104,7 @@ export const WorkProcess: React.FC = () => {
             <div className="relative w-full max-w-[580px] aspect-[417/300] rounded-[26px] overflow-hidden shadow-lg border border-slate-100 group bg-slate-950">
               <Image
                 src={imageSrc}
-                alt="How ThriveX AI Process Works"
+                alt="How DeepNova AI Process Works"
                 fill
                 sizes="(max-width: 1024px) 100vw, 580px"
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

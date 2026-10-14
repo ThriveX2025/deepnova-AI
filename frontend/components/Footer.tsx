@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { SITE_IMAGES } from "@/constants/images";
 
 export const Footer: React.FC = () => {
   return (
@@ -10,7 +11,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-14">
           {/* Column 1: Brand & Socials (5 Cols) */}
           <div className="lg:col-span-5 flex flex-col items-start space-y-6">
-            <Logo />
+            <Logo
+              src={SITE_IMAGES.footerLogo}
+              width={260}
+              height={80}
+              imageClassName="h-[56px] sm:h-[72px] md:h-[85px] lg:h-[80px] w-auto"
+            />
             <p className="font-body text-[16px] text-[#4A5568] leading-[29px] max-w-sm">
               We&apos;re more than just a technology partner Reach out to us for your solution.
             </p>
@@ -129,7 +135,7 @@ export const Footer: React.FC = () => {
       {/* Bottom Copyright Bar */}
       <div className="w-full bg-[#010D4C] py-5 px-6 sm:px-10 text-center">
         <p className="font-body text-[14px] text-white font-normal">
-          Copyright @2025 ThriveX AI.
+          Copyright @2025 DeepNova AI.
         </p>
       </div>
     </footer>

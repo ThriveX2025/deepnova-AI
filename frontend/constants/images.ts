@@ -1,12 +1,14 @@
 /**
- * Centralized Image Assets Configuration for ThriveX AI Website
+ * Centralized Image Assets Configuration for DeepNova AI Website
  *
  * All image paths are mapped here.
  */
 
 export const SITE_IMAGES = {
-  // Brand Logo and Favicon
-  logo: "/images/logo.svg",
+  // Brand Logos and Favicon
+  navbarLogo: "/images/logo2.svg",
+  footerLogo: "/images/logo.svg",
+  logo: "/images/logo2.svg",
   favicon: "/images/favicon.png",
 
   // 1. Hero Carousel Banner Slides (Local in public/images/)
@@ -47,14 +49,14 @@ export const SITE_IMAGES = {
   about: {
     feature: "/images/about-strategy.jpg",
     heroBanner: "/images/about-hero.jpg",
-    whoWeAre: "/images/who-we-are.jpg",
+    whoWeAre: "/images/team-man-woman-working-media-field-with-laptop-tablet_23-2148901154.jpg",
     founder: "/images/amruta-panchal.jpeg",
     team: {
-      dhruv: "/images/team/dhruv.webp",
-      kishan: "/images/team/kishan.png",
-      umang: "/images/team/umang.webp",
-      darshan: "/images/team/darshan.png",
-      kush: "/images/team/kush.jpeg",
+      dhruv: "/images/team/Dhruv.webp",
+      kishan: "/images/team/Kishan.png",
+      umang: "/images/team/Umang.webp",
+      darshan: "/images/team/Darshan.png",
+      kush: "/images/team/Kush.jpeg",
     },
     values: {
       innovation: "/images/values/idea.png",

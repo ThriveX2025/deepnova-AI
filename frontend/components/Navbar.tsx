@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
+import { SITE_IMAGES } from "@/constants/images";
 
 interface SubMenuItem {
   title: string;
@@ -76,7 +77,12 @@ export const Navbar: React.FC = () => {
       <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-14 h-20 sm:h-24 lg:h-28 flex items-center justify-between">
         {/* Left: Brand Logo */}
         <div className="flex-shrink-0">
-          <Logo />
+          <Logo
+            src={SITE_IMAGES.navbarLogo}
+            width={260}
+            height={80}
+            imageClassName="h-[56px] sm:h-[72px] md:h-[85px] lg:h-[56px] w-auto"
+          />
         </div>
 
         {/* Right: Grouped Nav Links + Contact Us Button */}

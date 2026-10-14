@@ -31,7 +31,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative w-full max-w-[540px] aspect-square rounded-[30px] overflow-hidden shadow-2xl border border-slate-100 group bg-[#060A1F]">
               <Image
                 src={imageSrc}
-                alt="ThriveX AI Strategy Innovation"
+                alt="DeepNova AI Strategy Innovation"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 540px"
@@ -51,12 +51,12 @@ export const AboutSection: React.FC = () => {
             {/* Main Title */}
             <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[52px] font-bold text-[#010D4C] tracking-tight leading-[1.15] lg:leading-[58px] mb-6">
               Transform with <br />
-              <span className="text-[#3B66FF]">ThriveX AI&apos;s Strategy</span>
+              <span className="text-[#3B66FF]">DeepNova AI&apos;s Strategy</span>
             </h2>
 
             {/* Paragraph */}
             <p className="font-body text-[#4A5568] text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-8 max-w-xl">
-              When data is all around but living in confusion, handling Data-Driven Strategy Consulting becomes challenging. Disorganized data, limited expertise, and the vast array of tools and practices required during model training and deployment can be overwhelming. This is where the expertise of skilled Data Scientists at ThriveX AI comes in, helping to bring order and clarity to the process.
+              When data is all around but living in confusion, handling Data-Driven Strategy Consulting becomes challenging. Disorganized data, limited expertise, and the vast array of tools and practices required during model training and deployment can be overwhelming. This is where the expertise of skilled Data Scientists at DeepNova AI comes in, helping to bring order and clarity to the process.
             </p>
 
             {/* Dark Navy Pill CTA Button with Up-Right Arrow */}

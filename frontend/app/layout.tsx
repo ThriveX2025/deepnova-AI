@@ -24,8 +24,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Transform Data into Insights with Thrivex AI Solutions",
-  description: "Explore how Thrivex AI converts data into actionable insights for strategic growth and a competitive edge.",
+  title: "Transform Data into Insights with DeepNova AI Solutions",
+  description: "Explore how DeepNova AI converts data into actionable insights for strategic growth and a competitive edge.",
   icons: {
     icon: "/images/favicon.png",
     shortcut: "/images/favicon.png",

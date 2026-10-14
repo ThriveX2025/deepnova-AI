@@ -96,7 +96,7 @@ export const PreFooterCTA: React.FC = () => {
 
         {/* Description Copy */}
         <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] max-w-2xl mx-auto mb-10 font-normal">
-          Getting started is simple and quick. Let ThriveX AI guide you through
+          Getting started is simple and quick. Let DeepNova AI guide you through
           a seamless process to begin your journey toward digital
           transformation.
         </p>
