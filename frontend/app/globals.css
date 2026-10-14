@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --font-nunito: 'Nunito', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-opensans: 'Open Sans', sans-serif;
+  --color-primary-navy: #010D4C;
+  --color-brand-blue: #4169E1;
+  --color-brand-blue-hover: #3154C4;
+  --color-card-bg: #F3F6FD;
+}
+
+@theme inline {
+  --font-nunito: var(--font-nunito);
+  --font-poppins: var(--font-poppins);
+  --font-opensans: var(--font-opensans);
+}
+
+/* Typography Utility Classes */
+.font-title {
+  font-family: var(--font-nunito), 'Nunito', sans-serif;
+}
+
+.font-nav {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-opensans), 'Open Sans', sans-serif;
+}
+
+/* Global Heading & Viewport Defaults */
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, h4, h5, h6, .dblue-title {
+    font-family: var(--font-nunito), 'Nunito', sans-serif;
+    color: #010D4C;
+  }
+}
+
+/* Pill Button Style */
+.elementor-button-custom {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Partner Logo Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
