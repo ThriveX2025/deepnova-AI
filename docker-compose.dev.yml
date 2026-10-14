@@ -1,0 +1,39 @@
+services:
+  frontend_dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: deepnova_frontend_dev:latest
+    container_name: deepnova_frontend_dev
+    restart: unless-stopped
+    expose:
+      - "3000"
+    # Optional direct host port mapping (defaults to port 3006 for dev to prevent port clashes)
+    # ports:
+    #   - "${DEV_PORT:-3006}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      - MINIO_ENDPOINT=${MINIO_ENDPOINT:-minio.api.thrivexai.cloud}
+      - MINIO_SECURE=${MINIO_SECURE:-True}
+      - MINIO_PORT=${MINIO_PORT:-443}
+      - MINIO_BUCKET=${MINIO_BUCKET:-depnova-ai}
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
+    networks:
+      - deepnova_network_dev
+      - dokploy-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/api/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      start_period: 40s
+      retries: 3
+
+networks:
+  deepnova_network_dev:
+    name: deepnova_network_dev
+    driver: bridge
+  dokploy-network:
+    external: true
