@@ -10,6 +10,8 @@ interface LogoProps {
   alt?: string;
   width?: number;
   height?: number;
+  showWordmark?: boolean;
+  wordmarkClassName?: string;
 }
 
 export const Logo: React.FC<LogoProps> = ({
@@ -19,11 +21,13 @@ export const Logo: React.FC<LogoProps> = ({
   alt = "DeepNova AI Logo",
   width = 260,
   height = 80,
+  showWordmark = false,
+  wordmarkClassName = "font-title font-semibold text-xl tracking-tight text-[#0C0E24]",
 }) => {
   return (
     <Link
       href="/"
-      className={`inline-flex items-center select-none ${className}`}
+      className={`inline-flex items-center gap-2.5 select-none ${className}`}
       aria-label="DeepNova AI Home"
     >
       <Image
@@ -34,6 +38,11 @@ export const Logo: React.FC<LogoProps> = ({
         priority
         className={`${imageClassName} object-contain`}
       />
+      {showWordmark && (
+        <span className={wordmarkClassName}>
+          Deep<span className="text-[#3D5AFE]">Nova</span>
+        </span>
+      )}
     </Link>
   );
 };

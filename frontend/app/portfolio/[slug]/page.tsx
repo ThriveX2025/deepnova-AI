@@ -59,16 +59,15 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* 2. Hero Banner */}
       <section
-        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[170px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
+        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[170px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#EEF1FF] bg-top bg-cover bg-no-repeat select-none"
         style={{
-          backgroundImage:
-            "url('/images/about-hero.jpg'), url('/images/about/about-hero.jpg')",
+          backgroundImage: "url('/images/about-hero.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/75 pointer-events-none" />
 
         <div className="relative z-20 max-w-5xl mx-auto text-center flex flex-col items-center">
-          <h1 className="font-title text-[28px] sm:text-[44px] lg:text-[64px] font-bold text-white tracking-tight leading-tight drop-shadow-md">
+          <h1 className="font-title text-[28px] sm:text-[44px] lg:text-[64px] font-semibold text-white tracking-tight leading-tight drop-shadow-md">
             {project.title}
           </h1>
         </div>
@@ -80,18 +79,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Left Column: Heading, Paragraph, CTA */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              <h2 className="font-title text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#010D4C] tracking-tight leading-[1.2] mb-5">
+              <h2 className="font-title text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] mb-5">
                 {project.tagline}
               </h2>
 
-              <p className="font-body text-[#4A5568] text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-8 font-normal">
+              <p className="font-body text-[#0C0E24]/80 text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-8 font-normal">
                 {project.overview}
               </p>
 
-              {/* Dark Navy Pill CTA Button with Up-Right Arrow */}
+              {/* Ink Pill CTA Button with Up-Right Arrow (Inter 600) */}
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-[#051138] hover:bg-[#010D4C] active:scale-95 text-white font-title text-[15px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-blue-950/20 transition-all duration-200 group"
+                className="inline-flex items-center gap-3 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 group"
               >
                 <span>GET A DEMO</span>
                 <svg
@@ -108,8 +107,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
             {/* Right Column: Video Preview Card with Circular Play Button */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
-              {/* Decorative Blue Dot Accent */}
-              <div className="hidden lg:block absolute -left-4 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#4169E1]/80 pointer-events-none" />
+              {/* Decorative Nova Blue Dot Accent */}
+              <div className="hidden lg:block absolute -left-4 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#3D5AFE] pointer-events-none" />
 
               <ProjectVideoPlayer
                 video={project.video}
@@ -124,10 +123,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* 4. Feature Card Grid Section (Dynamic 5, 6, or 7 Cards) */}
       <section className="relative w-full bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-14 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Centered Heading with Decorative Blue Dot */}
+          {/* Centered Heading with Decorative Nova Blue Dot */}
           <div className="relative flex items-center justify-center mb-12 sm:mb-16">
-            <div className="hidden sm:block absolute left-4 lg:left-12 w-3 h-3 rounded-full bg-[#4169E1]/80 pointer-events-none" />
-            <h2 className="font-title text-[32px] sm:text-[40px] lg:text-[46px] font-bold text-[#010D4C] tracking-tight uppercase text-center">
+            <div className="hidden sm:block absolute left-4 lg:left-12 w-3 h-3 rounded-full bg-[#3D5AFE] pointer-events-none" />
+            <h2 className="font-title text-[32px] sm:text-[40px] lg:text-[46px] font-semibold text-[#0C0E24] tracking-tight uppercase text-center">
               {cardGridTitle}
             </h2>
           </div>
@@ -139,9 +138,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               {project.coreFeatures.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                  className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                  <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                     {idx + 1}. {feature.title}
                   </h3>
                 </div>
@@ -155,9 +154,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.coreFeatures.slice(0, 3).map((feature, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                    className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                       {idx + 1}. {feature.title}
                     </h3>
                   </div>
@@ -169,9 +168,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.coreFeatures.slice(3, 6).map((feature, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                    className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                       {idx + 4}. {feature.title}
                     </h3>
                   </div>
@@ -183,9 +182,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.coreFeatures.slice(6, 7).map((feature, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-center"
+                    className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-center"
                   >
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                       {idx + 7}. {feature.title}
                     </h3>
                   </div>
@@ -200,9 +199,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.coreFeatures.slice(0, 3).map((feature, idx) => (
                   <div
                     key={idx}
-                    className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                    className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                       {idx + 1}. {feature.title}
                     </h3>
                   </div>
@@ -215,9 +214,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   {project.coreFeatures.slice(3, 5).map((feature, idx) => (
                     <div
                       key={idx}
-                      className="bg-[#F8FAFD] rounded-[20px] p-8 sm:p-9 border border-blue-50/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                      className="bg-[#EEF1FF]/60 rounded-[20px] p-8 sm:p-9 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                     >
-                      <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] tracking-tight leading-snug">
+                      <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] tracking-tight leading-snug">
                         {idx + 4}. {feature.title}
                       </h3>
                     </div>
@@ -248,14 +247,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
             {/* Right Column: Heading & Bullet Points */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[44px] font-bold text-[#010D4C] tracking-tight mb-8 uppercase">
+              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[44px] font-semibold text-[#0C0E24] tracking-tight mb-8 uppercase">
                 {showcaseTitle}
               </h2>
 
-              <div className="flex flex-col space-y-4 font-body text-[#010D4C] text-[16px] sm:text-[17px] font-medium">
+              <div className="flex flex-col space-y-4 font-body text-[#0C0E24] text-[16px] sm:text-[17px] font-medium">
                 {showcaseList.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#4169E1] flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#3D5AFE] flex-shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -265,23 +264,23 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 6. KEY BENEFITS & HOW IT WORKS (Full-Width Soft Blue Banner) */}
-      <section className="relative w-full bg-[#EEF4FC] py-20 sm:py-24 px-6 sm:px-10 lg:px-14 overflow-hidden">
+      {/* 6. KEY BENEFITS & HOW IT WORKS (Full-Width Frost Banner) */}
+      <section className="relative w-full bg-[#EEF1FF] py-20 sm:py-24 px-6 sm:px-10 lg:px-14 overflow-hidden">
         <div className="max-w-6xl mx-auto w-full relative">
-          {/* Decorative Blue Dot Accent on Right Margin */}
-          <div className="hidden lg:block absolute -right-6 top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-[#4169E1]/80 pointer-events-none" />
+          {/* Decorative Nova Blue Dot Accent on Right Margin */}
+          <div className="hidden lg:block absolute -right-6 top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-[#3D5AFE] pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Left Column: Benefits / Perfect For */}
             <div className="flex flex-col items-start">
-              <h3 className="font-title text-[24px] sm:text-[28px] font-bold text-[#010D4C] tracking-tight mb-7 uppercase">
+              <h3 className="font-title text-[24px] sm:text-[28px] font-semibold text-[#0C0E24] tracking-tight mb-7 uppercase">
                 {benefitsTitle}
               </h3>
 
-              <div className="flex flex-col space-y-3.5 font-body text-[#010D4C] text-[15px] sm:text-[16px] font-normal">
+              <div className="flex flex-col space-y-3.5 font-body text-[#0C0E24]/85 text-[15px] sm:text-[16px] font-normal">
                 {project.benefits.map((benefit, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#4169E1] flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#3D5AFE] flex-shrink-0" />
                     <span>{benefit}</span>
                   </div>
                 ))}
@@ -290,14 +289,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
             {/* Right Column: HOW IT WORKS */}
             <div className="flex flex-col items-start">
-              <h3 className="font-title text-[24px] sm:text-[28px] font-bold text-[#010D4C] tracking-tight mb-7 uppercase">
+              <h3 className="font-title text-[24px] sm:text-[28px] font-semibold text-[#0C0E24] tracking-tight mb-7 uppercase">
                 HOW IT WORKS
               </h3>
 
-              <div className="flex flex-col space-y-3.5 font-body text-[#010D4C] text-[15px] sm:text-[16px] font-normal">
+              <div className="flex flex-col space-y-3.5 font-body text-[#0C0E24]/85 text-[15px] sm:text-[16px] font-normal">
                 {howItWorksList.map((step, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#4169E1] flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#3D5AFE] flex-shrink-0" />
                     <span>{step}</span>
                   </div>
                 ))}

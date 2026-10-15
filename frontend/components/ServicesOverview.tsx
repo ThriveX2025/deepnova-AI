@@ -21,7 +21,7 @@ const SERVICES_LIST: ServiceCard[] = [
     image: SITE_IMAGES.services.development,
     href: "/services",
     icon: (
-      <svg className="w-14 h-14 text-[#4169E1]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
+      <svg className="w-14 h-14 text-[#3D5AFE]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
         <rect x="8" y="10" width="48" height="34" rx="4" />
         <path d="M24 44v8M40 44v8M18 52h28" strokeLinecap="round" />
         <circle cx="32" cy="27" r="6" />
@@ -37,7 +37,7 @@ const SERVICES_LIST: ServiceCard[] = [
     image: SITE_IMAGES.services.technology,
     href: "/technologies",
     icon: (
-      <svg className="w-14 h-14 text-[#4169E1]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
+      <svg className="w-14 h-14 text-[#3D5AFE]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
         <circle cx="32" cy="32" r="8" />
         <path d="M32 16v5M32 43v5M16 32h5M20 20l4 4M20 44l4-4" strokeLinecap="round" />
         <path d="M24 16c-6 4-8 12-8 16s2 12 8 16" strokeLinecap="round" strokeDasharray="3 3" />
@@ -56,7 +56,7 @@ const SERVICES_LIST: ServiceCard[] = [
     image: SITE_IMAGES.services.customSolutions,
     href: "/services/computer-vision",
     icon: (
-      <svg className="w-14 h-14 text-[#4169E1]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
+      <svg className="w-14 h-14 text-[#3D5AFE]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.2">
         <rect x="8" y="10" width="48" height="34" rx="4" />
         <path d="M24 44v8M40 44v8M18 52h28" strokeLinecap="round" />
         <path
@@ -85,22 +85,22 @@ export const ServicesOverview: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left Title */}
           <div className="lg:col-span-6">
-            <h2 className="font-title text-[30px] sm:text-[34px] lg:text-[44px] font-bold text-[#010D4C] tracking-tight leading-[1.2] lg:leading-[52px]">
-              <span className="text-[#4169E1]">Services </span> We Provide with Quality.
+            <h2 className="font-title text-[30px] sm:text-[34px] lg:text-[44px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] lg:leading-[52px]">
+              <span className="text-[#3D5AFE]">Services </span> We Provide with Quality.
             </h2>
           </div>
 
           {/* Right Lead Copy + Decorative dot */}
           <div className="lg:col-span-6 relative flex items-center justify-between">
-            <p className="font-body text-[#4A5568] text-[16px] leading-[29px] pr-8">
+            <p className="font-body text-[#0C0E24]/80 text-[16px] leading-[29px] pr-8">
               DeepNova AI empowers transformative insights in businesses through its Data-Driven Strategy Consulting team, utilizing Artificial Intelligence, Machine Learning, and Deep Learning. We remain at the forefront of industry trends, providing high-impact business solutions that drive remarkable revenue growth.
             </p>
-            <div className="hidden sm:block w-3.5 h-3.5 rounded-full bg-[#4169E1] flex-shrink-0" />
+            <div className="hidden sm:block w-3.5 h-3.5 rounded-full bg-[#3D5AFE] flex-shrink-0" />
           </div>
         </div>
 
         {/* 3 Prominent Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 sm:mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-16 sm:mt-20">
           {SERVICES_LIST.map((card) => {
             const hasError = imageErrors[card.id];
 
@@ -108,7 +108,7 @@ export const ServicesOverview: React.FC = () => {
               <Link
                 key={card.id}
                 href={card.href}
-                className="bg-[#F3F6FD] rounded-[20px] p-8 sm:p-10 transition-all duration-300 hover:bg-[#EBF1FA] hover:-translate-y-1 flex flex-col group"
+                className="bg-[#EEF1FF] rounded-[20px] p-6 sm:p-7 lg:p-10 transition-all duration-300 hover:bg-[#E4E9FF] hover:-translate-y-1 flex flex-col group border border-[#3D5AFE]/10"
               >
                 <div className="mb-6 w-14 h-14 relative flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
                   {!hasError ? (
@@ -125,11 +125,11 @@ export const ServicesOverview: React.FC = () => {
                   )}
                 </div>
 
-                <h3 className="font-title text-[22px] sm:text-[24px] font-bold text-[#010D4C] group-hover:text-[#4169E1] transition-colors mb-4 tracking-tight">
+                <h3 className="font-title text-[22px] sm:text-[24px] font-semibold text-[#0C0E24] group-hover:text-[#3D5AFE] transition-colors mb-4 tracking-tight">
                   {card.title}
                 </h3>
 
-                <p className="font-body text-[15px] sm:text-[16px] text-[#4A5568] leading-[26px] sm:leading-[28px] font-normal">
+                <p className="font-body text-[15px] sm:text-[16px] text-[#0C0E24]/80 leading-[26px] sm:leading-[28px] font-normal">
                   {card.description}
                 </p>
               </Link>

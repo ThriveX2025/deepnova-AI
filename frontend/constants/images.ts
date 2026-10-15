@@ -6,10 +6,11 @@
 
 export const SITE_IMAGES = {
   // Brand Logos and Favicon
-  navbarLogo: "/images/logo2.svg",
-  footerLogo: "/images/logo.svg",
-  logo: "/images/logo2.svg",
-  favicon: "/images/favicon.svg",
+  navbarLogo: "/images/logos/logo2.svg",
+  footerLogo: "/images/logos/logo.svg",
+  logo: "/images/logos/logo2.svg",
+  logoIcon: "/images/logos/logo-icon.svg",
+  favicon: "/images/logos/favicon.svg",
 
   // 1. Hero Carousel Banner Slides (Local in public/images/)
   hero: {
@@ -80,10 +81,5 @@ export const SITE_IMAGES = {
     post2: "/images/pexels-cottonbro-6153354.jpg",
     post1: "/images/pexels-thisisengineering-3861969.jpg",
     post3: "/images/boliviainteligente-5b9Lr-ggr0E-unsplash.jpg",
-  },
-
-  // 8. Pre-Footer Call to Action Background
-  cta: {
-    background: "/images/footer-above-cover.jpg",
   },
 };

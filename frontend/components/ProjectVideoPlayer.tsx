@@ -87,7 +87,7 @@ export const ProjectVideoPlayer: React.FC<ProjectVideoPlayerProps> = ({
               type="button"
               onClick={handleStartPlay}
               aria-label={`Play ${title} video preview`}
-              className="pointer-events-auto w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#4169E1] hover:bg-[#3154C4] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer focus:outline-none"
+              className="pointer-events-auto w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#3D5AFE] hover:bg-[#0C0E24] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer focus:outline-none"
             >
               <svg
                 className="w-8 h-8 fill-white"

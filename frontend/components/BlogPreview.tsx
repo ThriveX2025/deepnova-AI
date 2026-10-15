@@ -52,11 +52,11 @@ export const BlogPreview: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full">
         {/* Section Header */}
         <div className="flex flex-col items-start mb-16">
-          <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#4169E1]/10 text-[#4169E1] font-title text-[14px] font-bold uppercase tracking-[2px] leading-[22px] mb-5">
+          <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#FF6B35]/10 text-[#FF6B35] font-title text-[14px] font-semibold uppercase tracking-[2px] leading-[22px] mb-5">
             RECENT NEWS
           </div>
-          <h2 className="font-title text-[30px] sm:text-[34px] lg:text-[44px] font-bold text-[#010D4C] tracking-tight leading-[1.2] lg:leading-[52px]">
-            Inside Story &amp; <span className="text-[#4169E1]"> Blog</span>
+          <h2 className="font-title text-[30px] sm:text-[34px] lg:text-[44px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] lg:leading-[52px]">
+            Inside Story &amp; <span className="text-[#3D5AFE]"> Blog</span>
           </h2>
         </div>
 
@@ -68,7 +68,7 @@ export const BlogPreview: React.FC = () => {
             return (
               <article
                 key={post.id}
-                className="bg-white border border-slate-200/90 rounded-[20px] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group"
+                className="bg-white border border-slate-200/90 rounded-[20px] overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:border-[#3D5AFE]/30 transition-all duration-300 flex flex-col group"
               >
                 {/* Thumbnail Image */}
                 <div className="relative h-56 w-full bg-slate-900 overflow-hidden">
@@ -82,8 +82,8 @@ export const BlogPreview: React.FC = () => {
                       onError={() => handleImageError(post.id)}
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-blue-900 to-[#010D4C] flex items-center justify-center p-4">
-                      <span className="font-title text-sm font-bold text-white uppercase tracking-wider">
+                    <div className="w-full h-full bg-gradient-to-br from-[#7C4DFF] to-[#0C0E24] flex items-center justify-center p-4">
+                      <span className="font-title text-sm font-semibold text-white uppercase tracking-wider">
                         DeepNova AI Blog
                       </span>
                     </div>
@@ -93,10 +93,10 @@ export const BlogPreview: React.FC = () => {
                 {/* Card Body */}
                 <div className="p-8 flex flex-col flex-grow justify-between">
                   <div>
-                    <h3 className="font-title text-[20px] sm:text-[22px] font-bold text-[#010D4C] group-hover:text-[#4169E1] transition-colors leading-snug mb-3.5">
+                    <h3 className="font-title text-[20px] sm:text-[22px] font-semibold text-[#0C0E24] group-hover:text-[#3D5AFE] transition-colors leading-snug mb-3.5">
                       {post.title}
                     </h3>
-                    <p className="font-body text-[15px] sm:text-[16px] text-[#4A5568] leading-[26px] sm:leading-[28px] font-normal">
+                    <p className="font-body text-[15px] sm:text-[16px] text-[#0C0E24]/80 leading-[26px] sm:leading-[28px] font-normal">
                       {post.excerpt}
                     </p>
                   </div>

@@ -16,7 +16,7 @@ export default function ComputerVisionDevelopmentPage() {
 
       {/* 2. Hero Banner */}
       <section
-        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[170px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
+        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[170px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#EEF1FF] bg-top bg-cover bg-no-repeat select-none"
         style={{
           backgroundImage:
             "url('/images/solutions/cv-2.jpg'), url('/images/hero-2.jpg')",
@@ -25,7 +25,7 @@ export default function ComputerVisionDevelopmentPage() {
         <div className="absolute inset-0 bg-black/75 pointer-events-none" />
 
         <div className="relative z-20 max-w-4xl mx-auto text-center flex flex-col items-center">
-          <h1 className="font-title text-[32px] sm:text-[48px] lg:text-[72px] font-bold text-white tracking-tight leading-tight mb-5 drop-shadow-md">
+          <h1 className="font-title text-[32px] sm:text-[48px] lg:text-[72px] font-semibold text-white tracking-tight leading-tight mb-5 drop-shadow-md">
             Computer Vision
           </h1>
 
@@ -35,7 +35,7 @@ export default function ComputerVisionDevelopmentPage() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2.5 bg-[#051138] hover:bg-[#010D4C] active:scale-95 text-white font-title text-[14px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-blue-950/20 transition-all duration-200 group"
+            className="inline-flex items-center gap-2.5 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 group"
           >
             <span>CONSULT NOW</span>
             <svg
@@ -57,7 +57,7 @@ export default function ComputerVisionDevelopmentPage() {
         <div
           className="absolute inset-0 pointer-events-none opacity-85"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 0H0V160' stroke='rgba(65, 105, 225, 0.08)' stroke-width='1'/%3E%3Cpath d='M-6 0H6M0 -6V6M154 0H166M160 -6V6M-6 160H6M0 154V166M154 160H166M160 154V166' stroke='%237FA6DE' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 0H0V160' stroke='rgba(61, 90, 254, 0.08)' stroke-width='1'/%3E%3Cpath d='M-6 0H6M0 -6V6M154 0H166M160 -6V6M-6 160H6M0 154V166M154 160H166M160 154V166' stroke='%23B794FF' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`,
             backgroundPosition: "center top",
           }}
         />
@@ -81,10 +81,10 @@ export default function ComputerVisionDevelopmentPage() {
 
             {/* Right: Content */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#010D4C] tracking-tight leading-[1.2] mb-5">
-                Customized <span className="text-[#3B66FF]">Model Development</span>
+              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] mb-5">
+                Customized <span className="text-[#3D5AFE]">Model Development</span>
               </h2>
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
                 We specialize in developing customized computer vision applications using state-of-the-art frameworks such as TensorFlow, OpenCV, and PyTorch. Our expertise in real-time data processing and analysis allows us to create solutions that address the unique challenges of your industry.
               </p>
             </div>
@@ -94,10 +94,10 @@ export default function ComputerVisionDevelopmentPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left: Content */}
             <div className="lg:col-span-6 flex flex-col items-start order-2 lg:order-1">
-              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#010D4C] tracking-tight leading-[1.2] mb-5">
-                Object <span className="text-[#3B66FF]">Recognition and Categorization</span>
+              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] mb-5">
+                Object <span className="text-[#3D5AFE]">Recognition and Categorization</span>
               </h2>
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
                 Our experts utilize cutting-edge algorithms and neural networks to develop accurate classification systems and object detection, enhancing various industries by making applications more intelligent and responsive, such as in retail and automating defect identification in manufacturing.
               </p>
             </div>
@@ -133,10 +133,10 @@ export default function ComputerVisionDevelopmentPage() {
 
             {/* Right: Content */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#010D4C] tracking-tight leading-[1.2] mb-5">
-                Facial Recognition <span className="text-[#3B66FF]">Development</span>
+              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] mb-5">
+                Facial Recognition <span className="text-[#3D5AFE]">Development</span>
               </h2>
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
                 Our Developers create facial recognition systems to improve security protocols with access controls. We employ Deep Learning and Convolutional Neural Networks (CNNs) to provide cutting edge and secure solutions.
               </p>
             </div>
@@ -146,10 +146,10 @@ export default function ComputerVisionDevelopmentPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left: Content */}
             <div className="lg:col-span-6 flex flex-col items-start order-2 lg:order-1">
-              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#010D4C] tracking-tight leading-[1.2] mb-5">
-                Real Time <span className="text-[#3B66FF]">Visual Analysis</span>
+              <h2 className="font-title text-[30px] sm:text-[38px] lg:text-[42px] font-semibold text-[#0C0E24] tracking-tight leading-[1.2] mb-5">
+                Real Time <span className="text-[#3D5AFE]">Visual Analysis</span>
               </h2>
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] font-normal">
                 Our Experts develop real-time image processing solutions that enable instant data evaluation and actionable insights across various applications, including security surveillance, automated quality assessment, and dynamic customer interaction systems.
               </p>
             </div>

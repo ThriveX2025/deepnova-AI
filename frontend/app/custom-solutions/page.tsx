@@ -16,7 +16,7 @@ export default function CustomSolutionsPage() {
 
       {/* 2. Hero Banner */}
       <section
-        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[180px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
+        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[140px] lg:pb-[180px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#EEF1FF] bg-top bg-cover bg-no-repeat select-none"
         style={{
           backgroundImage:
             "url('/images/about-hero.jpg'), url('/images/about/about-hero.jpg')",
@@ -25,8 +25,8 @@ export default function CustomSolutionsPage() {
         <div className="absolute inset-0 bg-black/70 pointer-events-none" />
 
         <div className="relative z-20 max-w-5xl mx-auto text-center flex flex-col items-center">
-          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[84px] font-bold text-white tracking-tight leading-none drop-shadow-md">
-            Our <span className="text-[#3B66FF]">Solutions</span>
+          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[84px] font-semibold text-white tracking-tight leading-none drop-shadow-md">
+            Our <span className="text-[#3D5AFE]">Solutions</span>
           </h1>
         </div>
       </section>
@@ -36,9 +36,9 @@ export default function CustomSolutionsPage() {
         <div className="max-w-5xl mx-auto w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Card 1: Computer Vision */}
-            <div className="bg-white rounded-[26px] p-9 sm:p-12 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#EEF1FF]/50 rounded-[26px] p-9 sm:p-12 border border-[#3D5AFE]/15 shadow-sm hover:shadow-xl hover:border-[#3D5AFE]/30 transition-all duration-300 flex flex-col items-center text-center group">
               {/* Computer Vision High-Res Icon */}
-              <div className="w-20 h-20 mb-6 rounded-2xl bg-blue-50/50 border border-blue-100/80 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
+              <div className="w-20 h-20 mb-6 rounded-2xl bg-white border border-[#3D5AFE]/20 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                 <Image
                   src="/images/solutions/vision.png"
                   alt="Computer Vision Icon"
@@ -49,19 +49,19 @@ export default function CustomSolutionsPage() {
               </div>
 
               {/* Title */}
-              <h2 className="font-title text-[24px] sm:text-[26px] font-bold text-[#010D4C] mb-4">
+              <h2 className="font-title text-[24px] sm:text-[26px] font-semibold text-[#0C0E24] mb-4">
                 Computer Vision
               </h2>
 
               {/* Description */}
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
                 DeepNova AI uses NLP expertise to build intelligent applications that understand human language, driving results beyond traditional methods.
               </p>
 
               {/* Arrow Button Link */}
               <Link
                 href="/custom-solutions/computer-vision-development"
-                className="w-12 h-12 rounded-full border border-slate-200 text-[#4169E1] group-hover:border-[#4169E1] group-hover:bg-[#4169E1] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
+                className="w-12 h-12 rounded-full border border-slate-200 text-[#3D5AFE] group-hover:border-[#3D5AFE] group-hover:bg-[#3D5AFE] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
                 aria-label="View Computer Vision Development"
               >
                 <svg
@@ -77,9 +77,9 @@ export default function CustomSolutionsPage() {
             </div>
 
             {/* Card 2: Natural Language Processing */}
-            <div className="bg-white rounded-[26px] p-9 sm:p-12 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#EEF1FF]/50 rounded-[26px] p-9 sm:p-12 border border-[#3D5AFE]/15 shadow-sm hover:shadow-xl hover:border-[#3D5AFE]/30 transition-all duration-300 flex flex-col items-center text-center group">
               {/* NLP High-Res Icon */}
-              <div className="w-20 h-20 mb-6 rounded-2xl bg-blue-50/50 border border-blue-100/80 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
+              <div className="w-20 h-20 mb-6 rounded-2xl bg-white border border-[#3D5AFE]/20 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300 shadow-xs">
                 <Image
                   src="/images/solutions/processing.png"
                   alt="Natural Language Processing Icon"
@@ -90,19 +90,19 @@ export default function CustomSolutionsPage() {
               </div>
 
               {/* Title */}
-              <h2 className="font-title text-[24px] sm:text-[26px] font-bold text-[#010D4C] mb-4">
+              <h2 className="font-title text-[24px] sm:text-[26px] font-semibold text-[#0C0E24] mb-4">
                 Natural language processing
               </h2>
 
               {/* Description */}
-              <p className="font-body text-[#4A5568] text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
+              <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
                 Experience advanced computer vision software with real-time processing, scalable architectures, and customized solutions for your industry.
               </p>
 
               {/* Arrow Button Link */}
               <Link
                 href="/custom-solutions/natural-language-processing-development"
-                className="w-12 h-12 rounded-full border border-slate-200 text-[#4169E1] group-hover:border-[#4169E1] group-hover:bg-[#4169E1] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
+                className="w-12 h-12 rounded-full border border-slate-200 text-[#3D5AFE] group-hover:border-[#3D5AFE] group-hover:bg-[#3D5AFE] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
                 aria-label="View Natural Language Processing Development"
               >
                 <svg
@@ -128,7 +128,7 @@ export default function CustomSolutionsPage() {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative w-full max-w-[560px] aspect-[4/3] rounded-[26px] overflow-hidden shadow-xl border border-slate-100 group">
                 <Image
-                  src="/images/solutions/why-choose-us.jpg"
+                  src="/images/why-choose-us.jpg"
                   alt="Why Choose Us for your business"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -140,58 +140,58 @@ export default function CustomSolutionsPage() {
 
             {/* Right Column: Badge, Heading, 3 Reason Cards */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              {/* Slate-Blue Pill Badge */}
-              <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#6B82A0] text-white font-title text-[13px] font-bold uppercase tracking-[2px] mb-6 shadow-xs">
+              {/* Pill Badge */}
+              <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-gradient-to-r from-[#7C4DFF] to-[#3D5AFE] text-white font-title text-[13px] font-semibold uppercase tracking-[2px] mb-6 shadow-xs">
                 WHY CHOOSE US
               </div>
 
               {/* Heading */}
-              <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[48px] font-bold text-[#010D4C] tracking-tight leading-[1.15] mb-8">
-                Why <span className="text-[#3B66FF]">choose us</span> for your business.
+              <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[48px] font-semibold text-[#0C0E24] tracking-tight leading-[1.15] mb-8">
+                Why <span className="text-[#3D5AFE]">choose us</span> for your business.
               </h2>
 
               {/* 3 Reason Cards */}
               <div className="w-full flex flex-col space-y-4">
                 {/* Reason 1 */}
-                <div className="bg-white rounded-[20px] p-6 sm:p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-slate-200 text-[#3B66FF] flex items-center justify-center font-title font-bold text-lg bg-white shadow-xs">
+                <div className="bg-[#EEF1FF]/60 rounded-[20px] p-6 sm:p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-[#3D5AFE]/30 text-[#3D5AFE] flex items-center justify-center font-title font-semibold text-lg bg-white shadow-xs">
                     1
                   </div>
                   <div className="flex flex-col pt-1">
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] mb-1 tracking-tight">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] mb-1 tracking-tight">
                       Innovative Technology
                     </h3>
-                    <p className="font-body text-[#4A5568] text-[14px] sm:text-[15px] leading-[24px]">
+                    <p className="font-body text-[#0C0E24]/80 text-[14px] sm:text-[15px] leading-[24px]">
                       Employ the latest advancements in AI and Data Analytics to deliver state-of-the-art solutions.
                     </p>
                   </div>
                 </div>
 
                 {/* Reason 2 */}
-                <div className="bg-white rounded-[20px] p-6 sm:p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-slate-200 text-[#3B66FF] flex items-center justify-center font-title font-bold text-lg bg-white shadow-xs">
+                <div className="bg-[#EEF1FF]/60 rounded-[20px] p-6 sm:p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-[#3D5AFE]/30 text-[#3D5AFE] flex items-center justify-center font-title font-semibold text-lg bg-white shadow-xs">
                     2
                   </div>
                   <div className="flex flex-col pt-1">
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] mb-1 tracking-tight">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] mb-1 tracking-tight">
                       Expert Team
                     </h3>
-                    <p className="font-body text-[#4A5568] text-[14px] sm:text-[15px] leading-[24px]">
+                    <p className="font-body text-[#0C0E24]/80 text-[14px] sm:text-[15px] leading-[24px]">
                       Experienced Data Scientists with strong engineering background of 17 years in service &amp; manufacturing industry.
                     </p>
                   </div>
                 </div>
 
                 {/* Reason 3 */}
-                <div className="bg-white rounded-[20px] p-6 sm:p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-slate-200 text-[#3B66FF] flex items-center justify-center font-title font-bold text-lg bg-white shadow-xs">
+                <div className="bg-[#EEF1FF]/60 rounded-[20px] p-6 sm:p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-start gap-5">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-[#3D5AFE]/30 text-[#3D5AFE] flex items-center justify-center font-title font-semibold text-lg bg-white shadow-xs">
                     3
                   </div>
                   <div className="flex flex-col pt-1">
-                    <h3 className="font-title text-[18px] sm:text-[20px] font-bold text-[#010D4C] mb-1 tracking-tight">
+                    <h3 className="font-title text-[18px] sm:text-[20px] font-semibold text-[#0C0E24] mb-1 tracking-tight">
                       Time Bound Delivery
                     </h3>
-                    <ul className="font-body text-[#4A5568] text-[14px] sm:text-[15px] leading-[24px] space-y-1 list-disc list-inside">
+                    <ul className="font-body text-[#0C0E24]/80 text-[14px] sm:text-[15px] leading-[24px] space-y-1 list-disc list-inside">
                       <li>Committed to complete the project within timelines.</li>
                       <li>Completed various pilot projects in diverse domain (&gt;10 projects)</li>
                     </ul>

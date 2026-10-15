@@ -20,7 +20,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
   {
     id: 1,
     image: SITE_IMAGES.hero.slide1,
-    fallbackGradient: "from-slate-950 via-[#0B1528] to-[#010D4C]",
+    fallbackGradient: "from-[#0C0E24] via-[#7C4DFF]/30 to-[#3D5AFE]/40",
     titlePrimary: "Data-Driven ",
     titleAccent: "Strategy with AI",
     description:
@@ -31,7 +31,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
   {
     id: 2,
     image: SITE_IMAGES.hero.slide2,
-    fallbackGradient: "from-slate-950 via-[#0D1B2A] to-[#031525]",
+    fallbackGradient: "from-[#0C0E24] via-[#7C4DFF]/20 to-[#B794FF]/30",
     titlePrimary: "",
     titleAccent: "Computer Vision",
     description:
@@ -42,7 +42,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
   {
     id: 3,
     image: SITE_IMAGES.hero.slide3,
-    fallbackGradient: "from-slate-950 via-[#10142C] to-[#0A0E27]",
+    fallbackGradient: "from-[#0C0E24] via-[#3D5AFE]/30 to-[#FF6B35]/25",
     titlePrimary: "",
     titleAccent: "Natural language processing development",
     description:
@@ -125,11 +125,11 @@ export const HeroCarousel: React.FC = () => {
                 hasError ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="absolute inset-0 bg-[radial-gradient(#4169E1_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+              <div className="absolute inset-0 bg-[radial-gradient(#3D5AFE_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
             </div>
 
             {/* Dark Cinematic Vignette */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/80 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60 pointer-events-none" />
           </div>
         );
       })}
@@ -146,7 +146,7 @@ export const HeroCarousel: React.FC = () => {
               className="flex flex-col items-center animate-in fade-in zoom-in-95 duration-700"
             >
               {/* Main Headline */}
-              <h1 className="font-title text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-bold !text-white tracking-tight leading-[1.15] drop-shadow-md">
+              <h1 className="font-title text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-semibold !text-white tracking-tight leading-[1.15] drop-shadow-md">
                 <span className="text-white">{slide.titlePrimary}</span>
                 <span className="text-white">{slide.titleAccent}</span>
               </h1>
@@ -160,7 +160,7 @@ export const HeroCarousel: React.FC = () => {
               <div className="mt-8 sm:mt-9 md:mt-11">
                 <Link
                   href={slide.ctaLink}
-                  className="inline-flex items-center gap-3 bg-[#4169E1] hover:bg-[#3154C4] active:scale-95 text-white font-nav font-semibold text-[15px] sm:text-[16px] uppercase tracking-[0.5px] px-8 sm:px-10 py-3.5 sm:py-4 rounded-[50px] shadow-xl shadow-blue-600/30 transition-all duration-200 group"
+                  className="inline-flex items-center gap-3 bg-[#3D5AFE] hover:bg-[#0C0E24] active:scale-95 text-white font-nav font-semibold text-[15px] sm:text-[16px] uppercase tracking-[0.5px] px-8 sm:px-10 py-3.5 sm:py-4 rounded-[50px] shadow-xl shadow-indigo-600/30 transition-all duration-200 group"
                 >
                   <span>{slide.ctaText}</span>
                   <svg
@@ -211,7 +211,7 @@ export const HeroCarousel: React.FC = () => {
       </button>
 
       {/* Bottom Indicators / Pagination Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center space-x-3">
+      <div className="absolute bottom-24 sm:bottom-12 lg:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center space-x-3">
         {HERO_SLIDES.map((slide, index) => (
           <button
             key={slide.id}
@@ -220,7 +220,7 @@ export const HeroCarousel: React.FC = () => {
             aria-label={`Go to slide ${index + 1}`}
             className={`transition-all duration-300 rounded-full focus:outline-none cursor-pointer ${
               index === currentIndex
-                ? "w-8 h-2.5 bg-[#4169E1]"
+                ? "w-8 h-2.5 bg-gradient-to-r from-[#3D5AFE] to-[#7C4DFF]"
                 : "w-2.5 h-2.5 bg-white/40 hover:bg-white/70"
             }`}
           />

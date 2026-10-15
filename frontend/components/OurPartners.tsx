@@ -34,22 +34,22 @@ export const OurPartners: React.FC = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#F3F6FD] py-12 lg:py-16 px-6 sm:px-10 lg:px-14 overflow-hidden">
+    <section className="relative w-full bg-[#EEF1FF] py-12 lg:py-16 px-6 sm:px-10 lg:px-14 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
         {/* Decorative dot */}
-        <div className="w-3 h-3 rounded-full bg-[#4169E1] mb-4" />
+        <div className="w-3 h-3 rounded-full bg-[#3D5AFE] mb-4" />
 
         {/* Centered Heading */}
-        <h3 className="font-title text-[26px] sm:text-[30px] lg:text-[34px] font-bold text-[#010D4C] text-center tracking-tight leading-[1.2]">
-          Our <span className="text-[#4169E1]">Partners</span>
+        <h3 className="font-title text-[26px] sm:text-[30px] lg:text-[34px] font-semibold text-[#0C0E24] text-center tracking-tight leading-[1.2]">
+          Our <span className="text-[#3D5AFE]">Partners</span>
         </h3>
       </div>
 
       {/* Auto-scrolling Track */}
       <div className="w-full mt-8 sm:mt-10 overflow-hidden relative group">
         {/* Soft edge fade masks */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-r from-[#F3F6FD] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-l from-[#F3F6FD] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-r from-[#EEF1FF] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-l from-[#EEF1FF] to-transparent z-10 pointer-events-none" />
 
         <div className="animate-marquee flex items-center space-x-10 sm:space-x-16 py-2 w-max">
           {infinitePartners.map((partner, index) => {
@@ -73,7 +73,7 @@ export const OurPartners: React.FC = () => {
                   </div>
                 ) : (
                   <div className="h-9 sm:h-11 w-28 sm:w-36 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-center justify-center px-3 text-center">
-                    <span className="font-nav text-xs font-bold text-[#010D4C] uppercase tracking-wide">
+                    <span className="font-nav text-xs font-bold text-[#0C0E24] uppercase tracking-wide">
                       {partner.name}
                     </span>
                   </div>

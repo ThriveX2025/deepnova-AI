@@ -18,7 +18,7 @@ export default function PortfolioPage() {
 
       {/* 2. Hero Banner (Exact 1:1 alignment with About Us page) */}
       <section
-        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[150px] lg:pb-[200px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#F6FCFF] bg-top bg-cover bg-no-repeat select-none"
+        className="relative w-full pt-[150px] sm:pt-[190px] lg:pt-[220px] pb-[110px] sm:pb-[150px] lg:pb-[200px] px-6 sm:px-10 lg:px-14 flex items-center justify-center overflow-hidden bg-[#EEF1FF] bg-top bg-cover bg-no-repeat select-none"
         style={{
           backgroundImage: "url('/images/about-hero.jpg')",
         }}
@@ -28,8 +28,8 @@ export default function PortfolioPage() {
 
         {/* Centered Heading */}
         <div className="relative z-20 max-w-5xl mx-auto text-center flex flex-col items-center">
-          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[90px] font-bold text-white tracking-tight leading-none drop-shadow-md">
-            Our <span className="text-[#4169E1]">Portfolio</span>
+          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[90px] font-semibold text-white tracking-tight leading-none drop-shadow-md">
+            Our <span className="text-[#3D5AFE]">Portfolio</span>
           </h1>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function PortfolioPage() {
             {PORTFOLIO_PROJECTS.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-[24px] p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-[24px] p-6 sm:p-7 border border-slate-200/80 hover:border-[#3D5AFE]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Thumbnail Preview */}
@@ -60,13 +60,13 @@ export default function PortfolioPage() {
 
                   {/* Title */}
                   <Link href={`/portfolio/${item.slug}`}>
-                    <h3 className="font-title text-[20px] sm:text-[22px] font-bold text-[#4169E1] hover:text-[#3154C4] mb-3 leading-snug tracking-tight transition-colors">
+                    <h3 className="font-title text-[20px] sm:text-[22px] font-semibold text-[#0C0E24] hover:text-[#3D5AFE] mb-3 leading-snug tracking-tight transition-colors">
                       {item.title}
                     </h3>
                   </Link>
 
                   {/* Description */}
-                  <p className="font-body text-[#4A5568] text-[15px] leading-[26px] mb-6 font-normal">
+                  <p className="font-body text-[#0C0E24]/80 text-[15px] leading-[26px] mb-6 font-normal">
                     {item.overview}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export default function PortfolioPage() {
                 <div>
                   <Link
                     href={`/portfolio/${item.slug}`}
-                    className="inline-flex items-center justify-center bg-[#4169E1] hover:bg-[#3154C4] active:scale-95 text-white font-title text-[13px] font-bold uppercase tracking-wider px-7 py-2.5 rounded-full shadow-md shadow-blue-600/20 transition-all duration-200"
+                    className="inline-flex items-center justify-center bg-[#3D5AFE] hover:bg-[#0C0E24] active:scale-95 text-white font-nav text-[13px] font-semibold uppercase tracking-wider px-7 py-2.5 rounded-full shadow-md shadow-[#3D5AFE]/20 transition-all duration-200"
                   >
                     Read More
                   </Link>

@@ -60,8 +60,8 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black/55 pointer-events-none" />
 
         <div className="relative z-20 max-w-5xl mx-auto text-center flex flex-col items-center">
-          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[86px] font-bold text-white tracking-tight leading-none drop-shadow-md">
-            Contact <span className="text-[#3B66FF]">Us</span>
+          <h1 className="font-title text-[38px] sm:text-[60px] lg:text-[86px] font-semibold text-white tracking-tight leading-none drop-shadow-md">
+            Contact <span className="text-[#3D5AFE]">Us</span>
           </h1>
         </div>
       </section>
@@ -72,17 +72,17 @@ export default function ContactPage() {
           {/* Header Intro */}
           <div className="flex flex-col items-center text-center mb-16 lg:mb-20">
             {/* Pill Badge */}
-            <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#E6EFFF] text-[#3B66FF] font-title text-[13px] font-bold uppercase tracking-[2px] mb-5 shadow-xs">
+            <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#EEF1FF] text-[#3D5AFE] font-title text-[13px] font-semibold uppercase tracking-[2px] mb-5 shadow-xs border border-[#3D5AFE]/20">
               LET&apos;S SPEAK SOON!
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-title text-[32px] sm:text-[42px] lg:text-[46px] font-bold text-[#010D4C] tracking-tight leading-tight mb-4">
+            <h2 className="font-title text-[32px] sm:text-[42px] lg:text-[46px] font-semibold text-[#0C0E24] tracking-tight leading-tight mb-4">
               Level up your brand, Get in touch now.
             </h2>
 
             {/* Subtitle */}
-            <p className="font-body text-[#4A5568] text-[15px] sm:text-[17px] leading-[28px] max-w-2xl font-normal">
+            <p className="font-body text-[#0C0E24]/75 text-[15px] sm:text-[17px] leading-[28px] max-w-2xl font-normal">
               We&apos;d love to hear from you. Our friendly team is always here to chat.
             </p>
           </div>
@@ -92,10 +92,10 @@ export default function ContactPage() {
             {/* Left Column: 3 Contact Info Cards */}
             <div className="lg:col-span-5 flex flex-col space-y-5">
               {/* Card 1: Location */}
-              <div className="bg-[#F8FAFD] rounded-[20px] p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
-                <div className="w-13 h-13 rounded-full bg-blue-50/70 border border-blue-100/80 flex items-center justify-center flex-shrink-0 text-[#010D4C]">
+              <div className="bg-[#EEF1FF] rounded-[20px] p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
+                <div className="w-13 h-13 rounded-full bg-white border border-[#3D5AFE]/25 flex items-center justify-center flex-shrink-0 text-[#3D5AFE]">
                   <svg
-                    className="w-6 h-6 text-[#010D4C]"
+                    className="w-6 h-6 text-[#3D5AFE]"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -103,20 +103,20 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-title text-[12px] font-semibold text-[#6B7280] uppercase tracking-wider mb-0.5">
+                  <span className="font-nav text-[12px] font-medium text-[#0C0E24]/60 uppercase tracking-wider mb-0.5">
                     Location
                   </span>
-                  <span className="font-title text-[16px] sm:text-[17px] font-bold text-[#010D4C] leading-snug">
+                  <span className="font-title text-[16px] sm:text-[17px] font-semibold text-[#0C0E24] leading-snug">
                     Ahmedabad, Gujarat India
                   </span>
                 </div>
               </div>
 
               {/* Card 2: Email */}
-              <div className="bg-[#F8FAFD] rounded-[20px] p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
-                <div className="w-13 h-13 rounded-full bg-blue-50/70 border border-blue-100/80 flex items-center justify-center flex-shrink-0 text-[#010D4C]">
+              <div className="bg-[#EEF1FF] rounded-[20px] p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
+                <div className="w-13 h-13 rounded-full bg-white border border-[#3D5AFE]/25 flex items-center justify-center flex-shrink-0 text-[#3D5AFE]">
                   <svg
-                    className="w-6 h-6 text-[#010D4C]"
+                    className="w-6 h-6 text-[#3D5AFE]"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -124,12 +124,12 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-title text-[12px] font-semibold text-[#6B7280] uppercase tracking-wider mb-0.5">
+                  <span className="font-nav text-[12px] font-medium text-[#0C0E24]/60 uppercase tracking-wider mb-0.5">
                     Email us
                   </span>
                   <a
                     href="mailto:info@thrivexai.com"
-                    className="font-title text-[16px] sm:text-[17px] font-bold text-[#010D4C] hover:text-[#4169E1] transition-colors leading-snug"
+                    className="font-title text-[16px] sm:text-[17px] font-semibold text-[#0C0E24] hover:text-[#3D5AFE] transition-colors leading-snug"
                   >
                     info@thrivexai.com
                   </a>
@@ -137,10 +137,10 @@ export default function ContactPage() {
               </div>
 
               {/* Card 3: Call us */}
-              <div className="bg-[#F8FAFD] rounded-[20px] p-7 border border-slate-100 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
-                <div className="w-13 h-13 rounded-full bg-blue-50/70 border border-blue-100/80 flex items-center justify-center flex-shrink-0 text-[#010D4C]">
+              <div className="bg-[#EEF1FF] rounded-[20px] p-7 border border-[#3D5AFE]/15 shadow-xs hover:shadow-md transition-shadow flex items-center gap-5">
+                <div className="w-13 h-13 rounded-full bg-white border border-[#3D5AFE]/25 flex items-center justify-center flex-shrink-0 text-[#3D5AFE]">
                   <svg
-                    className="w-6 h-6 text-[#010D4C]"
+                    className="w-6 h-6 text-[#3D5AFE]"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -148,12 +148,12 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-title text-[12px] font-semibold text-[#6B7280] uppercase tracking-wider mb-0.5">
+                  <span className="font-nav text-[12px] font-medium text-[#0C0E24]/60 uppercase tracking-wider mb-0.5">
                     Call us
                   </span>
                   <a
                     href="tel:+919099332633"
-                    className="font-title text-[16px] sm:text-[17px] font-bold text-[#010D4C] hover:text-[#4169E1] transition-colors leading-snug"
+                    className="font-title text-[16px] sm:text-[17px] font-semibold text-[#0C0E24] hover:text-[#3D5AFE] transition-colors leading-snug"
                   >
                     +91 90993 32633
                   </a>
@@ -164,22 +164,22 @@ export default function ContactPage() {
             {/* Right Column: Contact Form */}
             <div className="lg:col-span-7">
               {submitted ? (
-                <div className="bg-blue-50/70 border border-blue-200/80 rounded-[24px] p-10 text-center animate-in fade-in duration-300">
-                  <div className="w-16 h-16 rounded-full bg-[#4169E1] text-white mx-auto flex items-center justify-center mb-5 shadow-lg">
+                <div className="bg-[#EEF1FF] border border-[#3D5AFE]/30 rounded-[24px] p-10 text-center animate-in fade-in duration-300">
+                  <div className="w-16 h-16 rounded-full bg-[#3D5AFE] text-white mx-auto flex items-center justify-center mb-5 shadow-lg">
                     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="font-title text-[24px] font-bold text-[#010D4C] mb-2">
+                  <h3 className="font-title text-[24px] font-semibold text-[#0C0E24] mb-2">
                     Message Sent Successfully!
                   </h3>
-                  <p className="font-body text-[#4A5568] text-[15px] max-w-md mx-auto mb-6">
+                  <p className="font-body text-[#0C0E24]/80 text-[15px] max-w-md mx-auto mb-6">
                     Thank you for reaching out. A member of our team will get back to you shortly.
                   </p>
                   <button
                     type="button"
                     onClick={() => setSubmitted(false)}
-                    className="inline-flex items-center justify-center bg-[#051138] hover:bg-[#010D4C] text-white font-title text-[13px] font-bold uppercase tracking-wider px-8 py-3 rounded-full transition-all cursor-pointer"
+                    className="inline-flex items-center justify-center bg-[#0C0E24] hover:bg-[#3D5AFE] text-white font-nav text-[13px] font-semibold uppercase tracking-wider px-8 py-3 rounded-full transition-all cursor-pointer"
                   >
                     Send Another Message
                   </button>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="First Name *"
                       required
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[50px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[50px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all font-body"
                     />
                     <input
                       type="text"
@@ -204,7 +204,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="Last Name *"
                       required
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[50px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[50px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all font-body"
                     />
                   </div>
 
@@ -217,7 +217,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="Email *"
                       required
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[50px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[50px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all font-body"
                     />
                     <input
                       type="tel"
@@ -225,7 +225,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="Phone Number"
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[50px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[50px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all font-body"
                     />
                   </div>
 
@@ -237,7 +237,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       placeholder="Subject"
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[50px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[50px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all font-body"
                     />
                   </div>
 
@@ -250,7 +250,7 @@ export default function ContactPage() {
                       placeholder="Message"
                       rows={5}
                       required
-                      className="w-full bg-[#F8FAFD] border border-slate-200/90 rounded-[20px] px-6 py-4 text-[#010D4C] placeholder-[#9CA3AF] text-[16px] focus:outline-none focus:border-[#4169E1] focus:bg-white focus:ring-2 focus:ring-[#4169E1]/15 transition-all resize-none font-body"
+                      className="w-full bg-[#EEF1FF]/60 border border-slate-200 rounded-[20px] px-6 py-4 text-[#0C0E24] placeholder-[#0C0E24]/40 text-[16px] focus:outline-none focus:border-[#3D5AFE] focus:bg-white focus:ring-2 focus:ring-[#3D5AFE]/15 transition-all resize-none font-body"
                     />
                   </div>
 
@@ -259,7 +259,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="inline-flex items-center justify-center bg-[#051138] hover:bg-[#010D4C] active:scale-95 text-white font-title text-[14px] font-bold uppercase tracking-wider px-10 py-3.5 rounded-[50px] shadow-lg shadow-blue-950/20 transition-all duration-200 cursor-pointer disabled:opacity-70"
+                      className="inline-flex items-center justify-center bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-10 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 cursor-pointer disabled:opacity-70"
                     >
                       {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
                     </button>

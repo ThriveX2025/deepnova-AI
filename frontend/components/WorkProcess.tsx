@@ -48,7 +48,7 @@ export const WorkProcess: React.FC = () => {
       <div
         className="absolute inset-0 pointer-events-none opacity-85"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 0H0V160' stroke='rgba(65, 105, 225, 0.08)' stroke-width='1'/%3E%3Cpath d='M-6 0H6M0 -6V6M154 0H166M160 -6V6M-6 160H6M0 154V166M154 160H166M160 154V166' stroke='%237FA6DE' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 0H0V160' stroke='rgba(61, 90, 254, 0.08)' stroke-width='1'/%3E%3Cpath d='M-6 0H6M0 -6V6M154 0H166M160 -6V6M-6 160H6M0 154V166M154 160H166M160 154V166' stroke='%23B794FF' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`,
           backgroundPosition: "center top",
         }}
       />
@@ -59,34 +59,34 @@ export const WorkProcess: React.FC = () => {
           {/* Left Column: Badge, Headline, Paragraph, Link */}
           <div className="lg:col-span-6 flex flex-col items-start">
             {/* Pill Badge */}
-            <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-[#738CA6] text-white font-title text-[13px] font-bold uppercase tracking-[2px] mb-6 shadow-xs">
+            <div className="inline-flex items-center px-5 py-1.5 rounded-full bg-gradient-to-r from-[#7C4DFF] to-[#3D5AFE] text-white font-title text-[13px] font-semibold uppercase tracking-[2px] mb-6 shadow-xs">
               WORK PROCESS
             </div>
 
             {/* Main Headline */}
-            <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[52px] font-bold text-[#010D4C] tracking-tight leading-[1.15] lg:leading-[58px] mb-6">
-              How <span className="text-[#3B66FF]">DeepNova AI&apos;s</span> <br />
+            <h2 className="font-title text-[34px] sm:text-[44px] lg:text-[52px] font-semibold text-[#0C0E24] tracking-tight leading-[1.15] lg:leading-[58px] mb-6">
+              How <span className="text-[#3D5AFE]">DeepNova AI&apos;s</span> <br />
               process &amp; works.
             </h2>
 
             {/* Subtitle / Description */}
-            <p className="font-body text-[#4A5568] text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-7 max-w-xl">
+            <p className="font-body text-[#0C0E24]/80 text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-7 max-w-xl">
               DeepNova AI specializes in Data-Driven Strategy Consulting, machine learning, and artificial intelligence, providing business solutions that deliver blazing-fast, striking results.
             </p>
 
             {/* "Want to learn more about us? Click here" Link */}
             <div className="flex flex-wrap items-center gap-2 text-[15px] sm:text-[16px]">
-              <span className="font-body text-[#4A5568]">Want to learn more about us?</span>
+              <span className="font-body text-[#0C0E24]/80">Want to learn more about us?</span>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-1.5 text-[#010D4C] hover:text-[#3B66FF] font-title font-semibold transition-colors group"
+                className="inline-flex items-center gap-1.5 text-[#0C0E24] hover:text-[#3D5AFE] font-title font-semibold transition-colors group"
               >
-                <span className="underline underline-offset-4 decoration-1 decoration-[#010D4C] group-hover:decoration-[#3B66FF]">
+                <span className="underline underline-offset-4 decoration-1 decoration-[#0C0E24] group-hover:decoration-[#3D5AFE]">
                   Click here
                 </span>
-                <span className="w-5 h-5 rounded-full border border-[#010D4C] group-hover:border-[#3B66FF] flex items-center justify-center transition-colors ml-0.5">
+                <span className="w-5 h-5 rounded-full border border-[#0C0E24] group-hover:border-[#3D5AFE] flex items-center justify-center transition-colors ml-0.5">
                   <svg
-                    className="w-3 h-3 text-[#010D4C] group-hover:text-[#3B66FF] transform group-hover:translate-x-0.5 transition-transform"
+                    className="w-3 h-3 text-[#0C0E24] group-hover:text-[#3D5AFE] transform group-hover:translate-x-0.5 transition-transform"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -101,7 +101,7 @@ export const WorkProcess: React.FC = () => {
 
           {/* Right Column: Rounded Feature Image */}
           <div className="lg:col-span-6 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[580px] aspect-[417/300] rounded-[26px] overflow-hidden shadow-lg border border-slate-100 group bg-slate-950">
+            <div className="relative w-full max-w-[580px] aspect-[417/300] rounded-[26px] overflow-hidden shadow-lg border border-slate-100 group bg-[#0C0E24]">
               <Image
                 src={imageSrc}
                 alt="How DeepNova AI Process Works"
@@ -120,19 +120,19 @@ export const WorkProcess: React.FC = () => {
           {PROCESS_STEPS.map((step) => (
             <div
               key={step.number}
-              className="bg-white rounded-[22px] p-7 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-md transition-all duration-300 border border-slate-100/80 flex items-start gap-5 sm:gap-6 group"
+              className="bg-white rounded-[22px] p-5 sm:p-6 lg:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-md transition-all duration-300 border border-slate-100/80 flex items-start gap-4 sm:gap-5 lg:gap-6 group"
             >
               {/* Step Number Circle */}
-              <div className="flex-shrink-0 w-13 h-13 sm:w-14 sm:h-14 rounded-full border border-[#D0DCF0] text-[#3B66FF] group-hover:border-[#3B66FF] group-hover:bg-[#3B66FF]/5 transition-colors flex items-center justify-center font-title font-bold text-xl sm:text-2xl bg-white shadow-xs">
+              <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full border border-[#B794FF]/50 text-[#3D5AFE] group-hover:border-[#3D5AFE] group-hover:bg-[#3D5AFE]/10 transition-colors flex items-center justify-center font-title font-semibold text-lg sm:text-xl lg:text-2xl bg-white shadow-xs">
                 {step.number}
               </div>
 
               {/* Step Content */}
               <div className="flex flex-col pt-0.5">
-                <h3 className="font-title text-[20px] sm:text-[22px] font-bold text-[#010D4C] mb-2 tracking-tight">
+                <h3 className="font-title text-[20px] sm:text-[22px] font-semibold text-[#0C0E24] mb-2 tracking-tight">
                   {step.title}
                 </h3>
-                <p className="font-body text-[14px] sm:text-[15px] text-[#4A5568] leading-[24px] sm:leading-[26px] font-normal">
+                <p className="font-body text-[14px] sm:text-[15px] text-[#0C0E24]/80 leading-[24px] sm:leading-[26px] font-normal">
                   {step.description}
                 </p>
               </div>

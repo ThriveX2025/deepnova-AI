@@ -1,32 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --font-nunito: 'Nunito', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-opensans: 'Open Sans', sans-serif;
-  --color-primary-navy: #010D4C;
-  --color-brand-blue: #4169E1;
-  --color-brand-blue-hover: #3154C4;
-  --color-card-bg: #F3F6FD;
+  /* Color Palette */
+  --color-ink: #0C0E24;
+  --color-nova-blue: #3D5AFE;
+  --color-ultraviolet: #7C4DFF;
+  --color-orchid-glow: #B794FF;
+  --color-ember: #FF6B35;
+  --color-frost: #EEF1FF;
 }
 
 @theme inline {
-  --font-nunito: var(--font-nunito);
-  --font-poppins: var(--font-poppins);
-  --font-opensans: var(--font-opensans);
+  --font-sora: var(--font-sora, 'Sora', sans-serif);
+  --font-inter: var(--font-inter, 'Inter', sans-serif);
+  --font-mono: var(--font-jetbrains-mono, 'JetBrains Mono', monospace);
+
+  --color-ink: #0C0E24;
+  --color-nova-blue: #3D5AFE;
+  --color-ultraviolet: #7C4DFF;
+  --color-orchid-glow: #B794FF;
+  --color-ember: #FF6B35;
+  --color-frost: #EEF1FF;
 }
 
 /* Typography Utility Classes */
-.font-title {
-  font-family: var(--font-nunito), 'Nunito', sans-serif;
+.font-title, .font-heading {
+  font-family: var(--font-sora, 'Sora', sans-serif);
 }
 
 .font-nav {
-  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-family: var(--font-inter, 'Inter', sans-serif);
 }
 
 .font-body {
-  font-family: var(--font-opensans), 'Open Sans', sans-serif;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+}
+
+.font-data-mono, .font-mono-val {
+  font-family: var(--font-jetbrains-mono, 'JetBrains Mono', monospace);
+  font-weight: 500;
+}
+
+/* Big Stat Numbers */
+.stat-number {
+  font-family: var(--font-sora, 'Sora', sans-serif);
+  font-weight: 600;
 }
 
 /* Global Heading & Viewport Defaults */
@@ -34,17 +52,26 @@
   html, body {
     overflow-x: hidden;
     max-width: 100vw;
+    background-color: #EEF1FF;
+    color: #0C0E24;
+    font-family: var(--font-inter, 'Inter', sans-serif);
   }
 
-  h1, h2, h3, h4, h5, h6, .dblue-title {
-    font-family: var(--font-nunito), 'Nunito', sans-serif;
-    color: #010D4C;
+  h1, h2, h3, h4 {
+    font-family: var(--font-sora, 'Sora', sans-serif);
+    color: #0C0E24;
+    font-weight: 600;
+  }
+
+  h5, h6, .dblue-title {
+    font-family: var(--font-sora, 'Sora', sans-serif);
+    color: #0C0E24;
   }
 }
 
 /* Pill Button Style */
 .elementor-button-custom {
-  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-family: var(--font-inter, 'Inter', sans-serif);
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
