@@ -27,6 +27,7 @@ export const SITE_IMAGES = {
     fluxo: "/images/partners/partner4.png",
     firefly: "/images/partners/partner5.jpeg",
     bdk: "/images/partners/partner6.webp",
+    royal: "/images/partners/partner7.png",
   },
 
   // 3. Tailored Solutions Icons

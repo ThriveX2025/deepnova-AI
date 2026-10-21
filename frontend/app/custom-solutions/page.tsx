@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/Button";
 import { Navbar } from "@/components/Navbar";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
 import { Footer } from "@/components/Footer";
@@ -55,25 +56,19 @@ export default function CustomSolutionsPage() {
 
               {/* Description */}
               <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
-                DeepNova AI uses NLP expertise to build intelligent applications that understand human language, driving results beyond traditional methods.
+                Experience advanced computer vision software with real-time processing, scalable architectures, and customized solutions for your industry.
               </p>
 
-              {/* Arrow Button Link */}
-              <Link
-                href="/custom-solutions/computer-vision-development"
-                className="w-12 h-12 rounded-full border border-slate-200 text-[#3D5AFE] group-hover:border-[#3D5AFE] group-hover:bg-[#3D5AFE] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
-                aria-label="View Computer Vision Development"
-              >
-                <svg
-                  className="w-5 h-5 transition-transform group-hover:translate-x-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
+              {/* Action Button */}
+              <div className="pt-2">
+                <Button
+                  href="/custom-solutions/computer-vision-development"
+                  variant="cyber-capsule"
+                  size="sm"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
+                  Explore Solution
+                </Button>
+              </div>
             </div>
 
             {/* Card 2: Natural Language Processing */}
@@ -96,25 +91,19 @@ export default function CustomSolutionsPage() {
 
               {/* Description */}
               <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[26px] mb-8 font-normal max-w-md">
-                Experience advanced computer vision software with real-time processing, scalable architectures, and customized solutions for your industry.
+                DeepNova AI uses NLP expertise to build intelligent applications that understand human language, driving results beyond traditional methods.
               </p>
 
-              {/* Arrow Button Link */}
-              <Link
-                href="/custom-solutions/natural-language-processing-development"
-                className="w-12 h-12 rounded-full border border-slate-200 text-[#3D5AFE] group-hover:border-[#3D5AFE] group-hover:bg-[#3D5AFE] group-hover:text-white transition-all flex items-center justify-center shadow-xs"
-                aria-label="View Natural Language Processing Development"
-              >
-                <svg
-                  className="w-5 h-5 transition-transform group-hover:translate-x-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
+              {/* Action Button */}
+              <div className="pt-2">
+                <Button
+                  href="/custom-solutions/natural-language-processing-development"
+                  variant="cyber-capsule"
+                  size="sm"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
+                  Explore Solution
+                </Button>
+              </div>
             </div>
           </div>
         </div>

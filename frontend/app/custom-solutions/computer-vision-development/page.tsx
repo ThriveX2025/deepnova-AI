@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "@/components/Button";
 import { Navbar } from "@/components/Navbar";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
 import { Footer } from "@/components/Footer";
@@ -33,21 +33,9 @@ export default function ComputerVisionDevelopmentPage() {
             Experience cutting-edge technology with our computer vision development, focusing on real-time processing, scalable architectures, and algorithm optimization, our experts design customized applications to meet the specific needs of various industries.
           </p>
 
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2.5 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 group"
-          >
-            <span>CONSULT NOW</span>
-            <svg
-              className="w-4 h-4 text-white transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-            </svg>
-          </Link>
+          <Button href="/contact" variant="cyber-capsule" size="md">
+            Consult Now
+          </Button>
         </div>
       </section>
 

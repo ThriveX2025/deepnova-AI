@@ -229,9 +229,9 @@ export default function AboutPage() {
                 </h3>
 
                 <p className="font-body text-[#0C0E24]/80 text-[15px] sm:text-[16px] leading-[28px] sm:leading-[30px] mb-5 font-normal">
-                  A passionate leader with 17+ years of expertise in{" "}
+                  A passionate leader with 23+ years of expertise in{" "}
                   <strong className="font-semibold text-[#0C0E24]">
-                    business development and sales
+                    business development and field
                   </strong>
                   , I am{" "}
                   <strong className="font-semibold text-[#0C0E24]">
@@ -267,7 +267,7 @@ export default function AboutPage() {
 
                   {/* Facebook */}
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/profile.php?id=61585035887945"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
@@ -280,7 +280,7 @@ export default function AboutPage() {
 
                   {/* LinkedIn */}
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/amruta-panchal-740137263/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -293,7 +293,7 @@ export default function AboutPage() {
 
                   {/* Instagram */}
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/thrivex_ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"

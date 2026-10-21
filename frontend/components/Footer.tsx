@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
               We&apos;re more than just a technology partner Reach out to us for your solution.
             </p>
 
-                     {/* Social Media Links */}
+            {/* Social Media Links */}
             <div className="flex items-center space-x-3 pt-2">
               {/* Instagram */}
               <a
@@ -99,6 +99,24 @@ export const Footer: React.FC = () => {
               </div>
 
               {/* Email */}
+              <div className="flex items-start gap-3">
+                <div className="text-[#3D5AFE] flex-shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <a
+                    href="mailto:info@thrivexai.com"
+                    className="text-[#0C0E24]/80 hover:text-[#3D5AFE] transition-colors"
+                  >
+                    info@thrivexai.com
+                  </a>
+                </div>
+              </div>
+
+
+              {/* Second Email */}
               <div className="flex items-center gap-3">
                 <div className="text-[#3D5AFE] flex-shrink-0">
                   <svg className="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth={2}>
@@ -106,10 +124,10 @@ export const Footer: React.FC = () => {
                   </svg>
                 </div>
                 <a
-                  href="mailto:info@thrivexai.com"
+                  href="mailto:amruta@deepnovaai.in"
                   className="text-[#0C0E24]/80 hover:text-[#3D5AFE] transition-colors"
                 >
-                  info@thrivexai.com
+                  amruta@deepnovaai.in
                 </a>
               </div>
 
@@ -135,7 +153,7 @@ export const Footer: React.FC = () => {
       {/* Bottom Copyright Bar */}
       <div className="w-full bg-[#0C0E24] pt-5 pb-24 lg:py-5 px-6 sm:px-10 text-center">
         <p className="font-body text-[14px] text-white font-normal">
-          Copyright @2025 DeepNova AI.
+          Copyright @2026 DeepNova AI.
         </p>
       </div>
     </footer>

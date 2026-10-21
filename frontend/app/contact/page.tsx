@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
+import { Button } from "@/components/Button";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -256,13 +257,14 @@ export default function ContactPage() {
 
                   {/* Submit Button */}
                   <div className="pt-2">
-                    <button
+                    <Button
                       type="submit"
+                      variant="cyber-capsule"
+                      size="md"
                       disabled={isSubmitting}
-                      className="inline-flex items-center justify-center bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-10 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 cursor-pointer disabled:opacity-70"
                     >
-                      {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
-                    </button>
+                      {isSubmitting ? "Submitting..." : "Submit Message"}
+                    </Button>
                   </div>
                 </form>
               )}

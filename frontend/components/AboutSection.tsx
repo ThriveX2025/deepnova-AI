@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "./Button";
 import { SITE_IMAGES } from "@/constants/images";
 
 export const AboutSection: React.FC = () => {
@@ -59,22 +59,10 @@ export const AboutSection: React.FC = () => {
               When data is all around but living in confusion, handling Data-Driven Strategy Consulting becomes challenging. Disorganized data, limited expertise, and the vast array of tools and practices required during model training and deployment can be overwhelming. This is where the expertise of skilled Data Scientists at DeepNova AI comes in, helping to bring order and clarity to the process.
             </p>
 
-            {/* Ink Pill CTA Button with Up-Right Arrow */}
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-3 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[15px] font-semibold uppercase tracking-wider px-8 py-4 rounded-[50px] shadow-lg shadow-blue-950/20 transition-all duration-200 group"
-            >
-              <span>MORE ABOUT US</span>
-              <svg
-                className="w-4 h-4 text-white transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-              </svg>
-            </Link>
+            {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
+            <Button href="/about" variant="cyber-capsule" size="md">
+              More About Us
+            </Button>
           </div>
         </div>
       </div>

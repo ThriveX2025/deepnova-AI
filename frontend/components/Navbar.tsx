@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
 import { SITE_IMAGES } from "@/constants/images";
+import { Button } from "./Button";
 
 interface SubMenuItem {
   title: string;
@@ -213,23 +214,9 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Contact Us Pill CTA Button with Interactive Arrow */}
-          <Link
-            href="/contact"
-            className={`group inline-flex items-center gap-2.5 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-7 py-3 rounded-[50px] shadow-lg shadow-[#3D5AFE]/25 transition-all duration-200 active:scale-95 border border-white/15 ${
-              isContact
-                ? "bg-[#0C0E24] ring-2 ring-white/30"
-                : "bg-[#3D5AFE] hover:bg-[#0C0E24] hover:border-[#3D5AFE]/40"
-            }`}
-          >
-            <span>Contact us</span>
-            <svg
-              className="w-3.5 h-3.5 text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-            >
-              <path d="M512 21.805V353.007C512 365.049 502.237 374.812 490.195 374.812C478.153 374.812 468.39 365.049 468.39 353.007V74.451L37.225 505.615C32.966 509.872 27.387 512.001 21.806 512.001C16.225 512.001 10.646 509.872 6.387 505.615C-2.129 497.099 -2.129 483.292 6.387 474.776L437.553 43.61H158.993C146.951 43.61 137.188 33.847 137.188 21.805C137.188 9.763 146.951 7.68059e-08 158.993 7.68059e-08H490.195C502.237 -0.000999923 512 9.763 512 21.805Z" />
-            </svg>
-          </Link>
+          <Button href="/contact" variant="cyber-capsule" size="sm">
+            Contact us
+          </Button>
         </div>
 
         {/* Mobile Top Right: Quick Consult Pill */}

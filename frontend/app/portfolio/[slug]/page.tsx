@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/Button";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
@@ -87,22 +88,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.overview}
               </p>
 
-              {/* Ink Pill CTA Button with Up-Right Arrow (Inter 600) */}
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-3 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav text-[14px] font-semibold uppercase tracking-wider px-8 py-3.5 rounded-[50px] shadow-lg shadow-[#0C0E24]/15 transition-all duration-200 group"
-              >
-                <span>GET A DEMO</span>
-                <svg
-                  className="w-4 h-4 text-white transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
-              </Link>
+              {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
+              <Button href="/contact" variant="cyber-capsule" size="md">
+                Get a Demo
+              </Button>
             </div>
 
             {/* Right Column: Video Preview Card with Circular Play Button */}

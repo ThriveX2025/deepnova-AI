@@ -17,6 +17,8 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { id: 4, name: "NMT", image: SITE_IMAGES.partners.nmt },
   { id: 5, name: "BDK", image: SITE_IMAGES.partners.bdk },
   { id: 6, name: "FIREFLY ENERGY", image: SITE_IMAGES.partners.firefly },
+  { id: 7, name: "Royal Electronics Sales & Services", image: SITE_IMAGES.partners.royal },
+
 ];
 
 export const OurPartners: React.FC = () => {
@@ -61,18 +63,18 @@ export const OurPartners: React.FC = () => {
                 className="flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"
               >
                 {!hasError ? (
-                  <div className="relative h-9 sm:h-11 lg:h-12 w-28 sm:w-36 lg:w-40 flex items-center justify-center transition-all duration-300">
+                  <div className="relative h-12 sm:h-14 lg:h-16 w-36 sm:w-44 lg:w-52 flex items-center justify-center transition-all duration-300">
                     <Image
                       src={partner.image}
                       alt={partner.name}
                       fill
                       className="object-contain"
-                      sizes="160px"
+                      sizes="220px"
                       onError={() => handleImageError(partner.id)}
                     />
                   </div>
                 ) : (
-                  <div className="h-9 sm:h-11 w-28 sm:w-36 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-center justify-center px-3 text-center">
+                  <div className="h-12 sm:h-14 lg:h-16 w-36 sm:w-44 lg:w-52 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-center justify-center px-3 text-center">
                     <span className="font-nav text-xs font-bold text-[#0C0E24] uppercase tracking-wide">
                       {partner.name}
                     </span>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+import { Button } from "./Button";
 
 interface CubeProps {
   className?: string;
@@ -101,19 +101,10 @@ export const PreFooterCTA: React.FC = () => {
           transformation.
         </p>
 
-        {/* CTA Button with Slanted Arrow */}
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-3 bg-[#0C0E24] hover:bg-[#3D5AFE] active:scale-95 text-white font-nav font-semibold text-[15px] sm:text-[16px] uppercase tracking-[0.5px] px-9 sm:px-10 py-4 rounded-[50px] shadow-xl shadow-slate-900/10 transition-all duration-200 group"
-        >
-          <span>CONSULT NOW</span>
-          <svg
-            className="w-4 h-4 fill-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-            viewBox="0 0 512 512"
-          >
-            <path d="M512 21.805V353.007C512 365.049 502.237 374.812 490.195 374.812C478.153 374.812 468.39 365.049 468.39 353.007V74.451L37.225 505.615C32.966 509.872 27.387 512.001 21.806 512.001C16.225 512.001 10.646 509.872 6.387 505.615C-2.129 497.099 -2.129 483.292 6.387 474.776L437.553 43.61H158.993C146.951 43.61 137.188 33.847 137.188 21.805C137.188 9.763 146.951 7.68059e-08 158.993 7.68059e-08H490.195C502.237 -0.000999923 512 9.763 512 21.805Z" />
-          </svg>
-        </Link>
+        {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
+        <Button href="/contact" variant="cyber-capsule" size="lg">
+          Consult Now
+        </Button>
       </div>
     </section>
   );
