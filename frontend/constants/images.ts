@@ -27,7 +27,8 @@ export const SITE_IMAGES = {
     fluxo: "/images/partners/partner4.png",
     firefly: "/images/partners/partner5.jpeg",
     bdk: "/images/partners/partner6.webp",
-    royal: "/images/partners/partner7.png",
+    ghv: "/images/partners/partner8.png",
+    royal: "/images/partners/royal logo.png",
   },
 
   // 3. Tailored Solutions Icons
@@ -51,7 +52,8 @@ export const SITE_IMAGES = {
   about: {
     feature: "/images/about-strategy.jpg",
     heroBanner: "/images/about-hero.jpg",
-    whoWeAre: "/images/team-man-woman-working-media-field-with-laptop-tablet_23-2148901154.jpg",
+    whoWeAre:
+      "/images/team-man-woman-working-media-field-with-laptop-tablet_23-2148901154.jpg",
     founder: "/images/amruta-panchal.jpeg",
     team: {
       dhruv: "/images/team/Dhruv.webp",

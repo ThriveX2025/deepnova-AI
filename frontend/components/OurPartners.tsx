@@ -18,7 +18,7 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { id: 5, name: "BDK", image: SITE_IMAGES.partners.bdk },
   { id: 6, name: "FIREFLY ENERGY", image: SITE_IMAGES.partners.firefly },
   { id: 7, name: "Royal Electronics Sales & Services", image: SITE_IMAGES.partners.royal },
-
+  { id: 8, name: "GHV", image: SITE_IMAGES.partners.ghv },
 ];
 
 export const OurPartners: React.FC = () => {
