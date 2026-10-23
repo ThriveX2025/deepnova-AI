@@ -60,7 +60,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
-            <Button href="/about" variant="cyber-capsule" size="md">
+            <Button href="/about" variant="flyout" size="md">
               More About Us
             </Button>
           </div>

@@ -102,7 +102,7 @@ export const PreFooterCTA: React.FC = () => {
         </p>
 
         {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
-        <Button href="/contact" variant="cyber-capsule" size="lg">
+        <Button href="/contact" variant="flyout" size="lg">
           Consult Now
         </Button>
       </div>

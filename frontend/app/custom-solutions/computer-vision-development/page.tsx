@@ -33,7 +33,7 @@ export default function ComputerVisionDevelopmentPage() {
             Experience cutting-edge technology with our computer vision development, focusing on real-time processing, scalable architectures, and algorithm optimization, our experts design customized applications to meet the specific needs of various industries.
           </p>
 
-          <Button href="/contact" variant="cyber-capsule" size="md">
+          <Button href="/contact" variant="flyout" size="md">
             Consult Now
           </Button>
         </div>

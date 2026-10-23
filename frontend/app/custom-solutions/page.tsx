@@ -63,7 +63,7 @@ export default function CustomSolutionsPage() {
               <div className="pt-2">
                 <Button
                   href="/custom-solutions/computer-vision-development"
-                  variant="cyber-capsule"
+                  variant="flyout"
                   size="sm"
                 >
                   Explore Solution
@@ -98,7 +98,7 @@ export default function CustomSolutionsPage() {
               <div className="pt-2">
                 <Button
                   href="/custom-solutions/natural-language-processing-development"
-                  variant="cyber-capsule"
+                  variant="flyout"
                   size="sm"
                 >
                   Explore Solution

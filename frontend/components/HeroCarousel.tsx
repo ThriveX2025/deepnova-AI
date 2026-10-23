@@ -158,7 +158,7 @@ export const HeroCarousel: React.FC = () => {
 
               {/* CTA Action Button */}
               <div className="mt-8 sm:mt-9 md:mt-11">
-                <Button href={slide.ctaLink} variant="cyber-capsule" size="md">
+                <Button href={slide.ctaLink} variant="flyout" size="md">
                   {slide.ctaText}
                 </Button>
               </div>

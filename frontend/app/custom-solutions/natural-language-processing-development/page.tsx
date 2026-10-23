@@ -33,7 +33,7 @@ export default function NaturalLanguageProcessingDevelopmentPage() {
             Natural Language Processing (NLP) empowers applications to understand human language, like sentiment analysis, intent detection, and entity extraction. We build customized NLP solutions with state-of-the-art models for chatbots, text summarization, search, and more.
           </p>
 
-          <Button href="/contact" variant="cyber-capsule" size="md">
+          <Button href="/contact" variant="flyout" size="md">
             Consult Now
           </Button>
         </div>

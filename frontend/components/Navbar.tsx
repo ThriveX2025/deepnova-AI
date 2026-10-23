@@ -27,11 +27,11 @@ const CUSTOM_SOLUTIONS: SubMenuItem[] = [
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  const isAbout = pathname === "/about" || pathname === "/about-us";
+  const isAbout = pathname === "/about";
   const isPortfolio = pathname === "/portfolio";
   const isSolutions =
     pathname?.startsWith("/custom-solutions") || pathname?.startsWith("/services");
-  const isContact = pathname === "/contact" || pathname === "/contact-us";
+  const isContact = pathname === "/contact";
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
@@ -214,7 +214,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Contact Us Pill CTA Button with Interactive Arrow */}
-          <Button href="/contact" variant="cyber-capsule" size="sm">
+          <Button href="/contact" variant="sweep" size="sm">
             Contact us
           </Button>
         </div>

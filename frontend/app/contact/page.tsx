@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
-import { Button } from "@/components/Button";
+import { SendMessageButton } from "@/components/SendMessageButton";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -30,7 +30,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate swift submission
+    // Smooth transition allowing airplane takeoff and Sent animation
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
@@ -42,7 +42,7 @@ export default function ContactPage() {
         subject: "",
         message: "",
       });
-    }, 600);
+    }, 1000);
   };
 
   return (
@@ -153,10 +153,10 @@ export default function ContactPage() {
                     Call us
                   </span>
                   <a
-                    href="tel:+919099332633"
+                    href="tel:+917984086915"
                     className="font-title text-[16px] sm:text-[17px] font-semibold text-[#0C0E24] hover:text-[#3D5AFE] transition-colors leading-snug"
                   >
-                    +91 90993 32633
+                    +91 79840 86915
                   </a>
                 </div>
               </div>
@@ -257,14 +257,11 @@ export default function ContactPage() {
 
                   {/* Submit Button */}
                   <div className="pt-2">
-                    <Button
+                    <SendMessageButton
                       type="submit"
-                      variant="cyber-capsule"
-                      size="md"
                       disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Submitting..." : "Submit Message"}
-                    </Button>
+                      isSubmitting={isSubmitting}
+                    />
                   </div>
                 </form>
               )}
