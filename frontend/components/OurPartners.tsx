@@ -42,11 +42,8 @@ export const OurPartners: React.FC = () => {
   return (
     <section className="relative w-full bg-[#EEF1FF] py-12 lg:py-16 px-6 sm:px-10 lg:px-14 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
-        {/* Decorative dot */}
-        <div className="w-3 h-3 rounded-full bg-[#3D5AFE] mb-4" />
-
         {/* Centered Heading */}
-        <h3 className="font-title text-[26px] sm:text-[30px] lg:text-[34px] font-semibold text-[#0C0E24] text-center tracking-tight leading-[1.2]">
+        <h3 className="font-title text-[30px] sm:text-[35px] lg:text-[40px] font-bold text-[#0C0E24] text-center tracking-tight leading-[1.2]">
           Our <span className="text-[#3D5AFE]">Partners</span>
         </h3>
       </div>
@@ -66,7 +63,7 @@ export const OurPartners: React.FC = () => {
             return (
               <div
                 key={`${partner.id}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"
+                className="flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110"
               >
                 {!hasError ? (
                   <Image

@@ -93,11 +93,7 @@
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 100s linear infinite;
-}
-
-.animate-marquee:hover {
-  animation-play-state: paused;
+  animation: marquee 40s linear infinite;
 }
 
 /* Shimmer Border Animation for Buttons */

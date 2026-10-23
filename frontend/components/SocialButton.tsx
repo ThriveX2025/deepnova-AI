@@ -70,7 +70,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
       <span className="relative z-10 w-full h-full flex items-center justify-center rounded-full border border-white/40 bg-transparent group-hover:bg-black/30 group-hover:backdrop-blur-md transition-all duration-100 shadow-xs">
         <svg
           viewBox={config.viewBox}
-          className="w-4 h-4 fill-white drop-shadow-xs transition-transform duration-300 group-hover:scale-105"
+          className="w-4 h-4 fill-white drop-shadow-xs duration-300 group-hover:scale-120"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
@@ -80,7 +80,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
 
       {/* 3D Tilting Colored Backdrop Card */}
       <span
-        className={`absolute inset-0 rounded-full pointer-events-none transition-transform duration-350 ease-[cubic-bezier(0.34,1.56,0.64,1)] origin-bottom group-hover:rotate-[35deg] group-hover:shadow-lg group-hover:shadow-black/20 z-0 ${config.bgClass}`}
+        className={`absolute inset-0 rounded-full ${config.bgClass}`}
         aria-hidden="true"
       />
     </a>
