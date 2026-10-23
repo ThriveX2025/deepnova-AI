@@ -8,17 +8,21 @@ export interface PartnerLogo {
   id: number;
   name: string;
   image: string;
+  size?: {
+    h: number;    // Height in px — controls how tall the logo appears
+    maxW?: number; // Optional max width cap in px (defaults to 200)
+  };
 }
 
 export const PARTNER_LOGOS: PartnerLogo[] = [
-  { id: 1, name: "FLUXO", image: SITE_IMAGES.partners.fluxo },
-  { id: 2, name: "KEC", image: SITE_IMAGES.partners.kec },
-  { id: 3, name: "PGEHS", image: SITE_IMAGES.partners.pgehs },
-  { id: 4, name: "NMT", image: SITE_IMAGES.partners.nmt },
-  { id: 5, name: "BDK", image: SITE_IMAGES.partners.bdk },
-  { id: 6, name: "FIREFLY ENERGY", image: SITE_IMAGES.partners.firefly },
-  { id: 7, name: "Royal Electronics Sales & Services", image: SITE_IMAGES.partners.royal },
-  { id: 8, name: "GHV", image: SITE_IMAGES.partners.ghv },
+  { id: 1, name: "FLUXO", image: SITE_IMAGES.partners.fluxo, size: { h: 60, maxW: 150 } },
+  { id: 2, name: "KEC", image: SITE_IMAGES.partners.kec, size: { h: 60, maxW: 130 } },
+  { id: 3, name: "PGEHS", image: SITE_IMAGES.partners.pgehs, size: { h: 68, maxW: 170 } },
+  { id: 4, name: "NMT", image: SITE_IMAGES.partners.nmt, size: { h: 60, maxW: 155 } },
+  { id: 5, name: "BDK", image: SITE_IMAGES.partners.bdk, size: { h: 70, maxW: 135 } },
+  { id: 6, name: "FIREFLY ENERGY", image: SITE_IMAGES.partners.firefly, size: { h: 70, maxW: 160 } },
+  { id: 7, name: "Royal Electronics Sales & Services", image: SITE_IMAGES.partners.royal, size: { h: 80, maxW: 200 } },
+  { id: 8, name: "GHV", image: SITE_IMAGES.partners.ghv, size: { h: 90, maxW: 120 } },
 ];
 
 export const OurPartners: React.FC = () => {
@@ -56,6 +60,8 @@ export const OurPartners: React.FC = () => {
         <div className="animate-marquee flex items-center space-x-10 sm:space-x-16 py-2 w-max">
           {infinitePartners.map((partner, index) => {
             const hasError = imageErrors[partner.id];
+            const h = partner.size?.h ?? 56;
+            const maxW = partner.size?.maxW ?? 200;
 
             return (
               <div
@@ -63,16 +69,16 @@ export const OurPartners: React.FC = () => {
                 className="flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"
               >
                 {!hasError ? (
-                  <div className="relative h-12 sm:h-14 lg:h-16 w-36 sm:w-44 lg:w-52 flex items-center justify-center transition-all duration-300">
-                    <Image
-                      src={partner.image}
-                      alt={partner.name}
-                      fill
-                      className="object-contain"
-                      sizes="220px"
-                      onError={() => handleImageError(partner.id)}
-                    />
-                  </div>
+                  <Image
+                    src={partner.image}
+                    alt={partner.name}
+                    width={maxW}
+                    height={h}
+                    className="object-contain w-auto"
+                    style={{ height: `${h}px`, width: "auto", maxWidth: `${maxW}px` }}
+                    sizes={`${maxW}px`}
+                    onError={() => handleImageError(partner.id)}
+                  />
                 ) : (
                   <div className="h-12 sm:h-14 lg:h-16 w-36 sm:w-44 lg:w-52 rounded-xl bg-white border border-slate-200/80 shadow-sm flex items-center justify-center px-3 text-center">
                     <span className="font-nav text-xs font-bold text-[#0C0E24] uppercase tracking-wide">
