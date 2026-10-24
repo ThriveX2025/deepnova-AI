@@ -109,8 +109,8 @@ export const Navbar: React.FC = () => {
           <div className="hidden lg:block">
             <Logo
               src={SITE_IMAGES.navbarLogo}
-              width={260}
-              height={80}
+              width={712}
+              height={118}
               imageClassName="h-[56px] w-auto"
             />
           </div>

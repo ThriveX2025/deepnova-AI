@@ -102,9 +102,8 @@ export const HeroCarousel: React.FC = () => {
           <div
             key={slide.id}
             aria-hidden={!isActive}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-            }`}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              }`}
           >
             {/* Background Image */}
             {!hasError ? (
@@ -121,9 +120,8 @@ export const HeroCarousel: React.FC = () => {
 
             {/* Gradient Fallback */}
             <div
-              className={`absolute inset-0 bg-gradient-to-br ${slide.fallbackGradient} ${
-                hasError ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute inset-0 bg-gradient-to-br ${slide.fallbackGradient} ${hasError ? "opacity-100" : "opacity-0"
+                }`}
             >
               <div className="absolute inset-0 bg-[radial-gradient(#3D5AFE_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
             </div>
@@ -145,6 +143,20 @@ export const HeroCarousel: React.FC = () => {
               key={slide.id}
               className="flex flex-col items-center animate-in fade-in zoom-in-95 duration-700"
             >
+              {/* Brand Tagline Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-title text-[13px] sm:text-[14px] font-medium tracking-wide mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#3D5AFE] animate-pulse" />
+                DeepNova AI LLP By{" "}
+                <a
+                  href="https://thrivexai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white underline underline-offset-2 transition-colors font-normal"
+                >
+                  ThriveX AI
+                </a>
+              </div>
+
               {/* Main Headline */}
               <h1 className="font-title text-[28px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-semibold !text-white tracking-tight leading-[1.15] drop-shadow-md">
                 <span className="text-white">{slide.titlePrimary}</span>
@@ -209,11 +221,10 @@ export const HeroCarousel: React.FC = () => {
             type="button"
             onClick={() => setCurrentIndex(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`transition-all duration-300 rounded-full focus:outline-none cursor-pointer ${
-              index === currentIndex
-                ? "w-8 h-2.5 bg-gradient-to-r from-[#3D5AFE] to-[#7C4DFF]"
-                : "w-2.5 h-2.5 bg-white/40 hover:bg-white/70"
-            }`}
+            className={`transition-all duration-300 rounded-full focus:outline-none cursor-pointer ${index === currentIndex
+              ? "w-8 h-2.5 bg-gradient-to-r from-[#3D5AFE] to-[#7C4DFF]"
+              : "w-2.5 h-2.5 bg-white/40 hover:bg-white/70"
+              }`}
           />
         ))}
       </div>

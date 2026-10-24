@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { SITE_IMAGES } from "@/constants/images";
 
 export interface PartnerLogo {
@@ -66,14 +65,13 @@ export const OurPartners: React.FC = () => {
                 className="flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110"
               >
                 {!hasError ? (
-                  <Image
+                  <img
                     src={partner.image}
                     alt={partner.name}
-                    width={maxW}
-                    height={h}
                     className="object-contain w-auto"
                     style={{ height: `${h}px`, width: "auto", maxWidth: `${maxW}px` }}
-                    sizes={`${maxW}px`}
+                    loading="lazy"
+                    decoding="async"
                     onError={() => handleImageError(partner.id)}
                   />
                 ) : (

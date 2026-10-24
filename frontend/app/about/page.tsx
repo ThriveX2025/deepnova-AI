@@ -150,12 +150,25 @@ export default function AboutPage() {
                 AI for your <span className="text-[#3D5AFE]">business.</span>
               </h2>
 
-              {/* Paragraph 1 */}
+              {/* Paragraph 1: Original Team Overview */}
               <p className="font-body text-[#0C0E24]/80 text-[17px] sm:text-[18px] leading-[1.5] mb-5 font-normal">
                 We are a team of seasoned data scientists, machine learning engineers, and business analysts with a proven track record of delivering transformative solutions across diverse industries. Our experts to meet the unique needs of your business.
               </p>
 
-              {/* Paragraph 2 */}
+              {/* Paragraph 2: Transition & Origin Story */}
+              <p className="font-body text-[#0C0E24]/80 text-[17px] sm:text-[18px] leading-[1.5] mb-5 font-normal">
+                <a
+                  href="https://thrivexai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#3D5AFE] font-medium underline"
+                >
+                  ThriveX AI
+                </a>{" "}
+                was founded in 2025 and delivered projects for clients across diverse domains. In 2026, we registered as DeepNova AI LLP to scale up our operations. Same team, same expertise, with a new name.
+              </p>
+
+              {/* Paragraph 3: Capabilities & Experience */}
               <p className="font-body text-[#0C0E24]/80 text-[17px] sm:text-[18px] leading-[1.5] mb-8 font-normal">
                 Our consultants bring years of hands-on experience in developing data models, designing AI-driven solutions, and implementing predictive analytics that scale with your growth. We are committed to delivering measurable results that exceed your expectations and drive sustainable value.
               </p>

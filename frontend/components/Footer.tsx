@@ -14,8 +14,8 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col items-start space-y-6">
             <Logo
               src={SITE_IMAGES.footerLogo}
-              width={260}
-              height={80}
+              width={712}
+              height={204}
               imageClassName="h-[56px] sm:h-[72px] md:h-[85px] lg:h-[80px] w-auto"
             />
             <p className="font-body text-[16px] text-[#0C0E24]/80 leading-[29px] max-w-sm">
@@ -135,7 +135,15 @@ export const Footer: React.FC = () => {
       {/* Bottom Copyright Bar */}
       <div className="w-full bg-[#0C0E24] pt-5 pb-24 lg:py-5 px-6 sm:px-10 text-center">
         <p className="font-body text-[14px] text-white font-normal">
-          Copyright @2026 DeepNova AI.
+          © 2026 DeepNova AI LLP. By{" "}
+          <a
+            href="https://thrivexai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#3D5AFE] underline underline-offset-2 transition-colors"
+          >
+            ThriveX AI
+          </a>.
         </p>
       </div>
     </footer>

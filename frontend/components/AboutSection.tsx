@@ -55,8 +55,21 @@ export const AboutSection: React.FC = () => {
             </h2>
 
             {/* Paragraph */}
-            <p className="font-body text-[#0C0E24]/80 text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-8 max-w-xl">
+            <p className="font-body text-[#0C0E24]/80 text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-4 max-w-xl">
               When data is all around but living in confusion, handling Data-Driven Strategy Consulting becomes challenging. Disorganized data, limited expertise, and the vast array of tools and practices required during model training and deployment can be overwhelming. This is where the expertise of skilled Data Scientists at DeepNova AI comes in, helping to bring order and clarity to the process.
+            </p>
+
+            {/* Paragraph 2: Origin & Transition */}
+            <p className="font-body text-[#0C0E24]/80 text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] mb-8 max-w-xl">
+              <a
+                href="https://thrivexai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#3D5AFE] font-medium underline"
+              >
+                ThriveX AI
+              </a>{" "}
+              was founded in 2025 and delivered projects for clients across diverse domains. In 2026, we registered as DeepNova AI LLP to scale up our operations. Same team, same expertise, with a new name.
             </p>
 
             {/* Cyber-Shimmer Dual-Zone Capsule CTA */}
