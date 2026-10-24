@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 :root {
+  /* Font Families */
+  --font-sora: 'Sora', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+
   /* Color Palette */
   --color-ink: #0C0E24;
   --color-nova-blue: #3D5AFE;
